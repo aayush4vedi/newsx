@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lobsters</title>
+    <description></description>
+    <link>https://lobste.rs/</link>
+    <atom:link href="https://lobste.rs/rss" rel="self" type="application/rss+xml" />
+
+      <item>
+        <title>Pijul: Towards 1.0</title>
+        <link>https://pijul.org/posts/2020-11-07-towards-1.0/</link>
+        <guid isPermaLink="false">https://lobste.rs/s/ml1n24</guid>
+        <author>A-Za-z0-9@users.lobste.rs (A-Za-z0-9)</author>
+        <pubDate>Mon, 09 Nov 2020 03:24:04 -0600</pubDate>
+        <comments>https://lobste.rs/s/ml1n24/pijul_towards_1_0</comments>
+        <description>
+          
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/ml1n24/pijul_towards_1_0&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>vcs</category>
+      </item>
+      <item>
+        <title>Zig v0.7.0 released</title>
+        <link>https://ziglang.org/download/</link>
+        <guid isPermaLink="false">https://lobste.rs/s/prutnh</guid>
+        <author>technetium@users.lobste.rs (technetium)</author>
+        <pubDate>Mon, 09 Nov 2020 07:20:15 -0600</pubDate>
+        <comments>https://lobste.rs/s/prutnh/zig_v0_7_0_released</comments>
+        <description>
+          
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/prutnh/zig_v0_7_0_released&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>zig</category>
+      </item>
+      <item>
+        <title>OpenBSD Router Guide</title>
+        <link>https://www.unixsheikh.com/tutorials/openbsd-router-guide/</link>
+        <guid isPermaLink="false">https://lobste.rs/s/lae80y</guid>
+        <author>unixsheikh@users.lobste.rs (unixsheikh)</author>
+        <pubDate>Mon, 09 Nov 2020 04:01:47 -0600</pubDate>
+        <comments>https://lobste.rs/s/lae80y/openbsd_router_guide</comments>
+        <description>
+          
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/lae80y/openbsd_router_guide&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>openbsd</category>
+          <category>privacy</category>
+          <category>networking</category>
+      </item>
+      <item>
+        <title>EU Draft Declaration Against Encryption</title>
+        <link>https://www.statewatch.org/media/1434/eu-council-draft-declaration-against-encryption-12143-20.pdf</link>
+        <guid isPermaLink="false">https://lobste.rs/s/ydeb9n</guid>
+        <author>lftherios@users.lobste.rs (lftherios)</author>
+        <pubDate>Mon, 09 Nov 2020 03:27:39 -0600</pubDate>
+        <comments>https://lobste.rs/s/ydeb9n/eu_draft_declaration_against_encryption</comments>
+        <description>
+          
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/ydeb9n/eu_draft_declaration_against_encryption&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>pdf</category>
+          <category>privacy</category>
+      </item>
+      <item>
+        <title>Nixops Services on Your Home Network</title>
+        <link>https://christine.website/blog/nixops-services-2020-11-09</link>
+        <guid isPermaLink="false">https://lobste.rs/s/kzforn</guid>
+        <author>cadey@users.lobste.rs (cadey)</author>
+        <pubDate>Mon, 09 Nov 2020 12:14:08 -0600</pubDate>
+        <comments>https://lobste.rs/s/kzforn/nixops_services_on_your_home_network</comments>
+        <description>
+          
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/kzforn/nixops_services_on_your_home_network&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>linux</category>
+          <category>systemd</category>
+      </item>
+      <item>
+        <title>What are you doing this week?</title>
+        <link>https://lobste.rs/s/cnmtte/what_are_you_doing_this_week</link>
+        <guid isPermaLink="false">https://lobste.rs/s/cnmtte</guid>
+        <author>caius@users.lobste.rs (caius)</author>
+        <pubDate>Mon, 09 Nov 2020 08:23:58 -0600</pubDate>
+        <comments>https://lobste.rs/s/cnmtte/what_are_you_doing_this_week</comments>
+        <description>
+          &#60;p&#62;What are you doing this week? Feel free to share!&#60;/p&#62;&#10;&#60;p&#62;Keep in mind it&#8217;s OK to do nothing at all, too.&#60;/p&#62;&#10;
+        </description>
+          <category>programming</category>
+          <category>ask</category>
+      </item>
+      <item>
+        <title>Haskell: The Bad Parts (part 2)</title>
+        <link>https://www.snoyman.com/blog/2020/11/haskell-bad-parts-2</link>
+        <guid isPermaLink="false">https://lobste.rs/s/lcvfey</guid>
+        <author>geekingfrog@users.lobste.rs (geekingfrog)</author>
+        <pubDate>Mon, 09 Nov 2020 14:00:18 -0600</pubDate>
+        <comments>https://lobste.rs/s/lcvfey/haskell_bad_parts_part_2</comments>
+        <description>
+          
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/lcvfey/haskell_bad_parts_part_2&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>haskell</category>
+      </item>
+      <item>
+        <title>PeerTube Live Streaming Support</title>
+        <link>https://github.com/Chocobozzz/PeerTube/pull/3250</link>
+        <guid isPermaLink="false">https://lobste.rs/s/uxzrhb</guid>
+        <author>djsumdog@users.lobste.rs (djsumdog)</author>
+        <pubDate>Mon, 09 Nov 2020 09:11:03 -0600</pubDate>
+        <comments>https://lobste.rs/s/uxzrhb/peertube_live_streaming_support</comments>
+        <description>
+          
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/uxzrhb/peertube_live_streaming_support&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>release</category>
+      </item>
+      <item>
+        <title>The Fuck is an app that corrects errors in previous console commands</title>
+        <link>https://github.com/nvbn/thefuck</link>
+        <guid isPermaLink="false">https://lobste.rs/s/pyc2u7</guid>
+        <author>BitAstronaut@users.lobste.rs (BitAstronaut)</author>
+        <pubDate>Mon, 09 Nov 2020 03:26:18 -0600</pubDate>
+        <comments>https://lobste.rs/s/pyc2u7/fuck_is_app_corrects_errors_previous</comments>
+        <description>
+          
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/pyc2u7/fuck_is_app_corrects_errors_previous&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>linux</category>
+          <category>unix</category>
+      </item>
+      <item>
+        <title>A tiny CI system</title>
+        <link>https://www.0chris.com/tiny-ci-system.html</link>
+        <guid isPermaLink="false">https://lobste.rs/s/fbc6wl</guid>
+        <author>stchris@users.lobste.rs (stchris)</author>
+        <pubDate>Sun, 08 Nov 2020 13:56:09 -0600</pubDate>
+        <comments>https://lobste.rs/s/fbc6wl/tiny_ci_system</comments>
+        <description>
+          
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/fbc6wl/tiny_ci_system&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>programming</category>
+      </item>
+      <item>
+        <title>Turing Incomplete Languages</title>
+        <link>http://neilmitchell.blogspot.com/2020/11/turing-incomplete-languages.html</link>
+        <guid isPermaLink="false">https://lobste.rs/s/wrx53b</guid>
+        <author>ehamberg@users.lobste.rs (ehamberg)</author>
+        <pubDate>Mon, 09 Nov 2020 07:10:20 -0600</pubDate>
+        <comments>https://lobste.rs/s/wrx53b/turing_incomplete_languages</comments>
+        <description>
+          
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/wrx53b/turing_incomplete_languages&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>plt</category>
+      </item>
+      <item>
+        <title>How to Recalculate a Spreadsheet</title>
+        <link>https://lord.io/blog/2020/spreadsheets/</link>
+        <guid isPermaLink="false">https://lobste.rs/s/v89hpx</guid>
+        <author>wesleyac@users.lobste.rs (wesleyac)</author>
+        <pubDate>Mon, 09 Nov 2020 14:10:52 -0600</pubDate>
+        <comments>https://lobste.rs/s/v89hpx/how_recalculate_spreadsheet</comments>
+        <description>
+          
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/v89hpx/how_recalculate_spreadsheet&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>programming</category>
+      </item>
+      <item>
+        <title>Benchmark Godot with Rust</title>
+        <link>https://blog.extrawurst.org/general/gamedev/rust/2020/11/07/godot-rust-benchmark.html</link>
+        <guid isPermaLink="false">https://lobste.rs/s/7mjgew</guid>
+        <author>extrawurst@users.lobste.rs (extrawurst)</author>
+        <pubDate>Mon, 09 Nov 2020 14:22:57 -0600</pubDate>
+        <comments>https://lobste.rs/s/7mjgew/benchmark_godot_with_rust</comments>
+        <description>
+          
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/7mjgew/benchmark_godot_with_rust&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>rust</category>
+          <category>graphics</category>
+          <category>performance</category>
+      </item>
+      <item>
+        <title>Rust emit=asm Can Be Misleading</title>
+        <link>https://siliconsprawl.com/2020/11/09/rust-emit-asm.html</link>
+        <guid isPermaLink="false">https://lobste.rs/s/t8o3vk</guid>
+        <author>revert@users.lobste.rs (revert)</author>
+        <pubDate>Mon, 09 Nov 2020 12:05:21 -0600</pubDate>
+        <comments>https://lobste.rs/s/t8o3vk/rust_emit_asm_can_be_misleading</comments>
+        <description>
+          
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/t8o3vk/rust_emit_asm_can_be_misleading&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>rust</category>
+      </item>
+      <item>
+        <title>Stop checking for NULL pointers</title>
+        <link>https://membarrier.wordpress.com/2020/11/08/stop-checking-for-null-pointers/</link>
+        <guid isPermaLink="false">https://lobste.rs/s/brpsqv</guid>
+        <author>raymii@users.lobste.rs (raymii)</author>
+        <pubDate>Sun, 08 Nov 2020 22:12:57 -0600</pubDate>
+        <comments>https://lobste.rs/s/brpsqv/stop_checking_for_null_pointers</comments>
+        <description>
+          
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/brpsqv/stop_checking_for_null_pointers&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>c</category>
+      </item>
+      <item>
+        <title>Booting a macOS Apple Silicon kernel in QEMU</title>
+        <link>https://worthdoingbadly.com/xnuqemu3/</link>
+        <guid isPermaLink="false">https://lobste.rs/s/jbdg7r</guid>
+        <author>calvin@users.lobste.rs (calvin)</author>
+        <pubDate>Mon, 09 Nov 2020 11:31:57 -0600</pubDate>
+        <comments>https://lobste.rs/s/jbdg7r/booting_macos_apple_silicon_kernel_qemu</comments>
+        <description>
+          
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/jbdg7r/booting_macos_apple_silicon_kernel_qemu&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>reversing</category>
+          <category>virtualization</category>
+          <category>mac</category>
+      </item>
+      <item>
+        <title>Having Moment.js Replacements Is Not Enough</title>
+        <link>https://dev.to/mimafogeus2/having-moment-js-replacements-is-not-enough-1cp4</link>
+        <guid isPermaLink="false">https://lobste.rs/s/fbncsu</guid>
+        <author>mimafogeus@users.lobste.rs (mimafogeus)</author>
+        <pubDate>Mon, 09 Nov 2020 02:24:28 -0600</pubDate>
+        <comments>https://lobste.rs/s/fbncsu/having_moment_js_replacements_is_not</comments>
+        <description>
+          
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/fbncsu/having_moment_js_replacements_is_not&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>javascript</category>
+          <category>web</category>
+          <category>nodejs</category>
+      </item>
+      <item>
+        <title>The AutoCorrelation Function</title>
+        <link>https://soundshader.github.io/hn/acf/</link>
+        <guid isPermaLink="false">https://lobste.rs/s/erogli</guid>
+        <author>knl@users.lobste.rs (knl)</author>
+        <pubDate>Mon, 09 Nov 2020 16:24:42 -0600</pubDate>
+        <comments>https://lobste.rs/s/erogli/autocorrelation_function</comments>
+        <description>
+          
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/erogli/autocorrelation_function&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>visualization</category>
+      </item>
+      <item>
+        <title>Wintun 0.9 Released with Major Usability Improvements</title>
+        <link>https://lists.zx2c4.com/pipermail/wireguard/2020-November/005921.html</link>
+        <guid isPermaLink="false">https://lobste.rs/s/yyazoo</guid>
+        <author>zx2c4@users.lobste.rs (zx2c4)</author>
+        <pubDate>Mon, 09 Nov 2020 10:47:47 -0600</pubDate>
+        <comments>https://lobste.rs/s/yyazoo/wintun_0_9_released_with_major_usability</comments>
+        <description>
+          
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/yyazoo/wintun_0_9_released_with_major_usability&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>networking</category>
+          <category>api</category>
+          <category>windows</category>
+      </item>
+      <item>
+        <title>XuanTie C906 based Allwinner RISC-V processor to power $12+ Linux SBC&#39;s</title>
+        <link>https://www.cnx-software.com/2020/11/09/xuantie-c906-based-allwinner-risc-v-processor-to-power-12-linux-sbcs/</link>
+        <guid isPermaLink="false">https://lobste.rs/s/7sxhjw</guid>
+        <author>ethoh@users.lobste.rs (ethoh)</author>
+        <pubDate>Mon, 09 Nov 2020 01:54:20 -0600</pubDate>
+        <comments>https://lobste.rs/s/7sxhjw/xuantie_c906_based_allwinner_risc_v</comments>
+        <description>
+          
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/7sxhjw/xuantie_c906_based_allwinner_risc_v&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>hardware</category>
+      </item>
+      <item>
+        <title>Architecture Playbook</title>
+        <link>https://nocomplexity.com/documents/arplaybook/index.html</link>
+        <guid isPermaLink="false">https://lobste.rs/s/4zhg1r</guid>
+        <author>friendlysock@users.lobste.rs (friendlysock)</author>
+        <pubDate>Mon, 09 Nov 2020 10:57:40 -0600</pubDate>
+        <comments>https://lobste.rs/s/4zhg1r/architecture_playbook</comments>
+        <description>
+          
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/4zhg1r/architecture_playbook&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>practices</category>
+      </item>
+      <item>
+        <title>LostInTangent talks about building VS Live Share, GitHub Codespaces, and CodeTour</title>
+        <link>https://about.sourcegraph.com/podcast/jonathan-carter/</link>
+        <guid isPermaLink="false">https://lobste.rs/s/cm0ozk</guid>
+        <author>beyang@users.lobste.rs (beyang)</author>
+        <pubDate>Mon, 09 Nov 2020 10:07:42 -0600</pubDate>
+        <comments>https://lobste.rs/s/cm0ozk/lostintangent_talks_about_building_vs</comments>
+        <description>
+          
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/cm0ozk/lostintangent_talks_about_building_vs&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>programming</category>
+          <category>audio</category>
+          <category>transcript</category>
+      </item>
+      <item>
+        <title>Migrating my blog to Zola</title>
+        <link>https://mrkaran.dev/posts/migrating-to-zola/</link>
+        <guid isPermaLink="false">https://lobste.rs/s/byh0mf</guid>
+        <author>mrkaran@users.lobste.rs (mrkaran)</author>
+        <pubDate>Sun, 08 Nov 2020 02:32:36 -0600</pubDate>
+        <comments>https://lobste.rs/s/byh0mf/migrating_my_blog_zola</comments>
+        <description>
+          
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/byh0mf/migrating_my_blog_zola&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>go</category>
+          <category>web</category>
+          <category>rust</category>
+      </item>
+      <item>
+        <title>BGP Lego Bricks</title>
+        <link>https://blog.cynthia.re/post/bgp-lego</link>
+        <guid isPermaLink="false">https://lobste.rs/s/5i80mk</guid>
+        <author>LeahNeukirchen@users.lobste.rs (LeahNeukirchen)</author>
+        <pubDate>Sun, 08 Nov 2020 14:18:40 -0600</pubDate>
+        <comments>https://lobste.rs/s/5i80mk/bgp_lego_bricks</comments>
+        <description>
+          
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/5i80mk/bgp_lego_bricks&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>hardware</category>
+          <category>networking</category>
+      </item>
+      <item>
+        <title>awklang.org - &#932;he site for things related to the awk language</title>
+        <link>http://www.awklang.org/</link>
+        <guid isPermaLink="false">https://lobste.rs/s/9obrcn</guid>
+        <author>zge@users.lobste.rs (zge)</author>
+        <pubDate>Sun, 08 Nov 2020 12:18:37 -0600</pubDate>
+        <comments>https://lobste.rs/s/9obrcn/awklang_org_he_site_for_things_related_awk</comments>
+        <description>
+          
+            &#60;p&#62;&#60;a href=&#34;https://lobste.rs/s/9obrcn/awklang_org_he_site_for_things_related_awk&#34;&#62;Comments&#60;/a&#62;&#60;/p&#62;
+        </description>
+          <category>unix</category>
+      </item>
+  </channel>
+</rss>

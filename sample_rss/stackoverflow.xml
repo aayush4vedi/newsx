@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule" xmlns:re="http://purl.org/atompub/rank/1.0">
+    <title type="text">Recent Questions - Stack Overflow</title>
+    <link rel="self" href="https://stackoverflow.com/feeds?sort=newest" type="application/atom+xml" />
+    <link rel="alternate" href="https://stackoverflow.com/questions" type="text/html" />
+    <subtitle>most recent 30 from stackoverflow.com</subtitle>
+    <updated>2020-11-10T00:42:17Z</updated>
+    <id>https://stackoverflow.com/feeds?sort=newest</id>
+    <creativeCommons:license>https://creativecommons.org/licenses/by-sa/4.0/rdf</creativeCommons:license> 
+    <entry>
+        <id>https://stackoverflow.com/q/64761260</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Google Sheet: Replace file with the same name</title>
+            <category scheme="https://stackoverflow.com/tags" term="google-apps-script" />
+            <category scheme="https://stackoverflow.com/tags" term="google-sheets" />
+        <author>
+            <name>cjvdg</name>
+            <uri>https://stackoverflow.com/users/6729785</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/64761260/google-sheet-replace-file-with-the-same-name" />
+        <published>2020-11-10T00:41:11Z</published>
+        <updated>2020-11-10T00:41:11Z</updated>
+        <summary type="html">
+            &lt;p&gt;I&#x27;m currently generating a PDF file from an active sheet. Is there a way to overwrite or replace the file in the google drive without putting it to trash? I have this code that I saw online.&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;  if (files.hasNext()) {&#xA;    files.next().setTrashed(true);&#xA;  }&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Am I using the code right or there is another way for me to do it?&lt;/p&gt;&#xA;&lt;p&gt;I used that code on the function below.&lt;/p&gt;&#xA;&lt;p&gt;&lt;div class=&quot;snippet&quot; data-lang=&quot;js&quot; data-hide=&quot;false&quot; data-console=&quot;true&quot; data-babel=&quot;false&quot;&gt;&#xD;&#xA;&lt;div class=&quot;snippet-code&quot;&gt;&#xD;&#xA;&lt;pre class=&quot;snippet-code-js lang-js prettyprint-override&quot;&gt;&lt;code&gt;function _exportBlob(blob, fileName) {&#xA;  &#xA;  var timeZone = Session.getScriptTimeZone();&#xA;  var date = Utilities.formatDate(new Date(), timeZone, &quot;yyyy&quot;);&#xA;  &#xA;  var ss = SpreadsheetApp.getActiveSpreadsheet();&#xA;  &#xA;  var fileName = &quot;FORM137 - &quot; &#x2B; ss.getRange(&quot;REPORT CARD!D12&quot;).getValue() &#x2B; &quot; - ARCS&quot; &#x2B; date;&#xA; &#xA;  var ssID = ss.getId();&#xA; &#xA;  var ssFile = DriveApp.getFileById(ssID);&#xA; &#xA;  blob = blob.setName(fileName)&#xA;  &#xA;  var parentFolder = DriveApp.getFileById(ss.getId()).getParents().next();&#xA;  var subFolder = parentFolder.getFoldersByName(&quot;CARDS&quot;).next();&#xA; &#xA;  var files = subFolder.getFilesByName(getFilename());&#xA;  if (files.hasNext()) {&#xA;    files.next().setTrashed(true);&#xA;  }&#xA;  var pdfFile = subFolder.createFile(blob);&#xA;  &#xA;  &#xA;  if (pdfFile) {&#xA;    const htmlOutput = HtmlService&#xA;    .createHtmlOutput(&#x27;&amp;lt;p&amp;gt;Click to open &amp;lt;a href=&quot;&#x27; &#x2B; pdfFile.getUrl() &#x2B; &#x27;&quot; target=&quot;_blank&quot;&amp;gt;&#x27; &#x2B; fileName &#x2B; &#x27;&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&#x27;)&#xA;    .setWidth(300)&#xA;    .setHeight(80)&#xA;    SpreadsheetApp.getUi().showModalDialog(htmlOutput, &#x27;Export Successful&#x27;)&#xA;  }&#xA;}&lt;/code&gt;&lt;/pre&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;/p&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/64761258</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">In python 3, re-raise an error with a shorter traceback</title>
+            <category scheme="https://stackoverflow.com/tags" term="python" />
+            <category scheme="https://stackoverflow.com/tags" term="try-except" />
+        <author>
+            <name>Abe</name>
+            <uri>https://stackoverflow.com/users/660664</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/64761258/in-python-3-re-raise-an-error-with-a-shorter-traceback" />
+        <published>2020-11-10T00:40:39Z</published>
+        <updated>2020-11-10T00:40:39Z</updated>
+        <summary type="html">
+            &lt;p&gt;I&#x27;m trying to create a try-except block that re-raises an arbitrary exception, but only includes the final block in the traceback stack.&lt;/p&gt;&#xA;&lt;p&gt;Something like this:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;import traceback&#xA;&#xA;def my_func(shorten_tracebacks=True):&#xA;    try:&#xA;        # Do stuff here&#xA;&#xA;    except Exception as e:&#xA;        if shorten_tracebacks:&#xA;            raise TheSameTypeOfError, e, traceback.print_exc(limit=1)&#xA;&#xA;        else:&#xA;            raise(e)&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Is there a preferred way to do this?&lt;/p&gt;&#xA;&lt;p&gt;In case it matters, I&#x27;m doing this for convenience in debugging certain APIs that are often used in jupyter notebooks---they tend to generate really long stack traces where only the last block is informative. This forces the user to scroll a lot. If you don&#x27;t want to shorten the traceback, you can always set &lt;code&gt;shorten_tracebacks=False&lt;/code&gt;&lt;/p&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/64761257</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">How do I decompile an .exe file made with Turbo Studio 20?</title>
+            <category scheme="https://stackoverflow.com/tags" term="virtual" />
+            <category scheme="https://stackoverflow.com/tags" term="virtualization" />
+        <author>
+            <name>&#xC7;a&#x11F;atay</name>
+            <uri>https://stackoverflow.com/users/10601747</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/64761257/how-do-i-decompile-an-exe-file-made-with-turbo-studio-20" />
+        <published>2020-11-10T00:40:37Z</published>
+        <updated>2020-11-10T00:40:37Z</updated>
+        <summary type="html">
+            &lt;p&gt;I already have a virtualized .exe file, but I don&#x27;t know how to back virtualize it?&lt;/p&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/64761255</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">What is the current status of Java scripting? (i.e., JSR 223 or successors)</title>
+            <category scheme="https://stackoverflow.com/tags" term="java" />
+            <category scheme="https://stackoverflow.com/tags" term="jsr223" />
+        <author>
+            <name>davidbak</name>
+            <uri>https://stackoverflow.com/users/751579</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/64761255/what-is-the-current-status-of-java-scripting-i-e-jsr-223-or-successors" />
+        <published>2020-11-10T00:40:29Z</published>
+        <updated>2020-11-10T00:40:29Z</updated>
+        <summary type="html">
+            &lt;p&gt;I would like to add scripting capability to events in an existing Java application.  Looking about, I find JSR 223 for Java scripting.  But it is withdrawn, and &lt;a href=&quot;https://en.wikipedia.org/wiki/Scripting_for_the_Java_Platform&quot; rel=&quot;nofollow noreferrer&quot;&gt;wikipedia tells me&lt;/a&gt; that&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;it was decided that this functionality would be included as an integral part of Java 9 and onward.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Yet looking at &lt;a href=&quot;https://en.wikipedia.org/wiki/Java_version_history&quot; rel=&quot;nofollow noreferrer&quot;&gt;the wikipedia page on Java SE versions&lt;/a&gt; I see nothing from Java SE 9 onward to the present time (Java SE 16, under development) that sounds like &amp;quot;scripting&amp;quot; to me.&lt;/p&gt;&#xA;&lt;p&gt;So what is the current recommended approach to integrate a scripting facility into an existing Java program? (And did I miss something in Java SE 9&#x2B; that speaks to this?)&lt;/p&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/64761254</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Create readonly user on all 1000 postgres databases and schema&#x27;s</title>
+            <category scheme="https://stackoverflow.com/tags" term="postgresql" />
+            <category scheme="https://stackoverflow.com/tags" term="grant" />
+        <author>
+            <name>JSS</name>
+            <uri>https://stackoverflow.com/users/1409047</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/64761254/create-readonly-user-on-all-1000-postgres-databases-and-schemas" />
+        <published>2020-11-10T00:40:23Z</published>
+        <updated>2020-11-10T00:40:23Z</updated>
+        <summary type="html">
+            &lt;p&gt;Using &lt;a href=&quot;https://www.vaultproject.io/&quot; rel=&quot;nofollow noreferrer&quot;&gt;Vault&lt;/a&gt; I&#x27;m trying to create an on-demand temporary &lt;strong&gt;read-only&lt;/strong&gt; users in a Postgres 11.8 instance.&lt;/p&gt;&#xA;&lt;p&gt;I will have:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;1000&#x2B; databases (one per customer aka tenant)&lt;/li&gt;&#xA;&lt;li&gt;Each database has a &lt;code&gt;public&lt;/code&gt; and &lt;code&gt;reporting&lt;/code&gt; schema.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;So I&#x27;m trying to find a way to grant this read-only user access to every database, and on all tables in both schemas.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;While I came up with the following snippet:&lt;/p&gt;&#xA;&lt;pre class=&quot;lang-sql prettyprint-override&quot;&gt;&lt;code&gt;-- Create a new user&#xA;CREATE ROLE &amp;quot;my-readonly-user&amp;quot; WITH LOGIN PASSWORD &#x27;test123&#x27;;&#xA;&#xA;-- Grant access to the two schema&#x27;s we have&#xA;GRANT USAGE ON SCHEMA public TO &amp;quot;my-readonly-user&amp;quot;;&#xA;GRANT USAGE ON SCHEMA reporting TO &amp;quot;my-readonly-user&amp;quot;;&#xA;&#xA;-- Grant access to all tables in our two schema&#x27;s&#xA;GRANT SELECT ON ALL TABLES IN SCHEMA public TO &amp;quot;my-readonly-user&amp;quot;;&#xA;GRANT SELECT ON ALL TABLES IN SCHEMA reporting TO &amp;quot;my-readonly-user&amp;quot;;&#xA;&#xA;-- Grant access to sequences&#xA;GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO &amp;quot;my-readonly-user&amp;quot;;&#xA;GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA reporting TO &amp;quot;my-readonly-user&amp;quot;;&#xA;&#xA;-- Grant access to future tables&#xA;ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT SELECT ON TABLES TO &amp;quot;my-readonly-user&amp;quot;;&#xA;ALTER DEFAULT PRIVILEGES IN SCHEMA reporting GRANT SELECT ON TABLES TO &amp;quot;my-readonly-user&amp;quot;;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;It will only apply to 1 single database (the current one). If I login with the readonly user and switch to some databases, I don&#x27;t see any tables except in the first database.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;A cluster holds many databases, which hold many schemas. Schemas (even&#xA;with the same name) in different DBs are unrelated. Granting&#xA;privileges for a schema only applies to this particular schema in the&#xA;&lt;strong&gt;current DB (the current DB at the time of granting)&lt;/strong&gt;.&#xA;&lt;a href=&quot;https://stackoverflow.com/a/24923877/1409047&quot;&gt;https://stackoverflow.com/a/24923877/1409047&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Because of that limitation, it seems to make the grant snippet from above more complex. Should I iterate all my databases somehow and run the snippet? How would I do the database switch? Is it even possible in plain SQL (as required by &lt;a href=&quot;https://www.vaultproject.io/api/secret/databases/postgresql#parameters-1&quot; rel=&quot;nofollow noreferrer&quot;&gt;Vault&#x27;s API&lt;/a&gt;)? Anyone did this before?&lt;/p&gt;&#xA;&lt;p&gt;Note: doing the same in MySQL only requires 2 lines of code, using wildcards &lt;code&gt;*.*&lt;/code&gt; which is not supported in Postgres afaik:&lt;/p&gt;&#xA;&lt;pre class=&quot;lang-sql prettyprint-override&quot;&gt;&lt;code&gt;CREATE USER &#x27;{{name}}&#x27;@&#x27;10.0.0.0/255.0.0.0&#x27; IDENTIFIED BY &#x27;{{password}}&#x27;;&#xA;GRANT SELECT, SHOW DATABASES, SHOW VIEW ON *.* TO &#x27;{{name}}&#x27;@&#x27;10.0.0.0/255.0.0.0&#x27;;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/64761252</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Stack overflow calling Spring authenticationManager.authenticate</title>
+            <category scheme="https://stackoverflow.com/tags" term="java" />
+            <category scheme="https://stackoverflow.com/tags" term="spring" />
+            <category scheme="https://stackoverflow.com/tags" term="spring-boot" />
+            <category scheme="https://stackoverflow.com/tags" term="spring-security" />
+            <category scheme="https://stackoverflow.com/tags" term="jwt" />
+        <author>
+            <name>JHerrinJr</name>
+            <uri>https://stackoverflow.com/users/14530055</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/64761252/stack-overflow-calling-spring-authenticationmanager-authenticate" />
+        <published>2020-11-10T00:40:08Z</published>
+        <updated>2020-11-10T00:40:08Z</updated>
+        <summary type="html">
+            &lt;p&gt;I started with a spring boot starter project version 2.3.5, but when I call&#xA;authenticationManager.authenticate&#xA;I get a stack overflow error.&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;java.lang.StackOverflowError: null&#xA;    at ch.qos.logback.classic.Logger.callTurboFilters(Logger.java:751) ~[logback-classic-1.2.3.jar:na]&#xA;    at ch.qos.logback.classic.Logger.isDebugEnabled(Logger.java:469) ~[logback-classic-1.2.3.jar:na]&#xA;    at ch.qos.logback.classic.Logger.isDebugEnabled(Logger.java:465) ~[logback-classic-1.2.3.jar:na]&#xA;    at org.apache.commons.logging.LogAdapter$Slf4jLog.isDebugEnabled(LogAdapter.java:310) ~[spring-jcl-5.2.10.RELEASE.jar:5.2.10.RELEASE]&#xA;    at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:186) ~[spring-security-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]&#xA;    at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$AuthenticationManagerDelegator.authenticate(WebSecurityConfigurerAdapter.java:524) ~[spring-security-config-5.3.5.RELEASE.jar:5.3.5.RELEASE]&#xA;    at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:219) ~[spring-security-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]&#xA;    at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$AuthenticationManagerDelegator.authenticate(WebSecurityConfigurerAdapter.java:524) ~[spring-security-config-5.3.5.RELEASE.jar:5.3.5.RELEASE]&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Initially I did not use the user variable and instead created created the new UsernamePasswordAuthenticationToken inside the authenticationManager.authenticate either way I get the stack overflow error. I also have tried @PostMapping instead of @RequestMappign and Method. All of these cause the same failure.&#xA;I get the printline that says I am &amp;quot;in /Authenticate&amp;quot; with the following.&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;2020-11-09 16:20:32.141 DEBUG 10456 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to io.javabrains.springsecurityjwt.HelloResource#createAuthenticationToken(AuthenticationRequest)&#xA;2020-11-09 16:20:32.188 DEBUG 10456 --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read &amp;quot;application/json;charset=UTF-8&amp;quot; to [io.javabrains.springsecurityjwt.models.AuthenticationRequest@758a32c5]&#xA;in /Authenticate&#xA;2020-11-09 16:20:32.197 DEBUG 10456 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Failed to complete request: org.springframework.web.util.NestedServletException: Handler dispatch failed; nested exception is java.lang.StackOverflowError&#xA;2020-11-09 16:20:32.201 ERROR 10456 --- [nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.StackOverflowError] with root cause&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Here is the full code of the Class&#xA;Thank you for any info or things I should try!&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;package io.javabrains.springsecurityjwt;&#xA;&#xA;import io.javabrains.springsecurityjwt.models.AuthenticationRequest;&#xA;import io.javabrains.springsecurityjwt.models.AuthenticationResponse;&#xA;import io.javabrains.springsecurityjwt.services.MyUserDetailsService;&#xA;import io.javabrains.springsecurityjwt.util.JwtUtil;&#xA;import org.springframework.beans.factory.annotation.Autowired;&#xA;import org.springframework.http.ResponseEntity;&#xA;import org.springframework.security.authentication.AuthenticationManager;&#xA;import org.springframework.security.authentication.BadCredentialsException;&#xA;import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;&#xA;import org.springframework.security.core.userdetails.UserDetails;&#xA;import org.springframework.web.bind.annotation.RequestBody;&#xA;import org.springframework.web.bind.annotation.RequestMapping;&#xA;import org.springframework.web.bind.annotation.RequestMethod;&#xA;import org.springframework.web.bind.annotation.RestController;&#xA;&#xA;@RestController&#xA;public class HelloResource {&#xA;&#xA;    @Autowired&#xA;    private AuthenticationManager authenticationManager;&#xA;&#xA;    @Autowired&#xA;    private MyUserDetailsService userDetailsService;&#xA;&#xA;    @Autowired&#xA;    private JwtUtil jwtTokenUtil;&#xA;&#xA;    @RequestMapping( &amp;quot;/hello&amp;quot;)&#xA;    public String hello() {&#xA;        return &amp;quot;Hello World&amp;quot;;&#xA;    }&#xA;&#xA;    @RequestMapping(value = &amp;quot;/authenticate&amp;quot;, method = RequestMethod.POST)&#xA;    public ResponseEntity&amp;lt;?&amp;gt; createAuthenticationToken(@RequestBody AuthenticationRequest authenticationRequest) throws Exception {&#xA;        UsernamePasswordAuthenticationToken user = new UsernamePasswordAuthenticationToken(authenticationRequest.getUsername(), authenticationRequest.getPassword());&#xA;        System.out.println(&amp;quot;in /Authenticate&amp;quot;);&#xA;        try {&#xA;            authenticationManager.authenticate(&#xA;                    user&#xA;//                  new UsernamePasswordAuthenticationToken(authenticationRequest.getUsername(), authenticationRequest.getPassword())&#xA;            );&#xA;            System.out.println(&amp;quot;in Try in /Authenticate&amp;quot;);&#xA;        } catch (BadCredentialsException e) {&#xA;            throw new Exception(&amp;quot;Incorrect Username or Password&amp;quot;, e);&#xA;        }&#xA;        System.out.println(&amp;quot;outside the try catch&amp;quot;);&#xA;&#xA;        final UserDetails userDetails = userDetailsService&#xA;                .loadUserByUsername(authenticationRequest.getUsername());&#xA;        final String jwt = jwtTokenUtil.generateToken(userDetails);&#xA;&#xA;        return ResponseEntity.ok(new AuthenticationResponse(jwt));&#xA;&#xA;    }&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/64761251</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">What is the meaning of this error &quot;Object of class stdClass could not be converted to string&quot;</title>
+            <category scheme="https://stackoverflow.com/tags" term="laravel" />
+        <author>
+            <name>Ekenma Peter Nwabueze</name>
+            <uri>https://stackoverflow.com/users/14211878</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/64761251/what-is-the-meaning-of-this-error-object-of-class-stdclass-could-not-be-convert" />
+        <published>2020-11-10T00:40:07Z</published>
+        <updated>2020-11-10T00:40:07Z</updated>
+        <summary type="html">
+            &lt;p&gt;i was trying to complete a payment process, after a successful attempt i got this error on the request function. everything seems to be working fine.... but i always get this error after the payment was successful only to run the request function&lt;/p&gt;&#xA;&lt;p&gt;The is the console log header error&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;POST https://mywebsite/tv/request&#xA;Status 500&#xA;Internal Server Error&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;My request function&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;function makeRequest(payLoad) {&#xA;    try {&#xA;        $.ajax({&#xA;            url: &#x27;/tv/request&#x27;,&#xA;            type: &#x27;POST&#x27;,&#xA;            dataType: &#x27;JSON&#x27;,&#xA;            data: payLoad,&#xA;            success: function(data) {&#xA;                console.log(data);&#xA;                document.getElementById(&#x27;loader&#x27;).style.display = &#x27;none&#x27;;&#xA;                if(data.status == -20000) {&#xA;                    showNote(&#x27;warning&#x27;, data.msg);&#xA;                    $(&#x27;#exampleModal&#x27;).modal(&#x27;show&#x27;);&#xA;                }&#xA;                if(data.status == -1) {&#xA;                    showNote(&#x27;warning&#x27;, data.msg);&#xA;                    return false;&#xA;                }&#xA;                if((1 &amp;lt;= data.status) &amp;amp;&amp;amp; (data.status &amp;lt;= 88)) {&#xA;                    showNote(&#x27;warning&#x27;, data.msg);&#xA;                    return false;&#xA;                }&#xA;                if(data.status == 404) {&#xA;                    showNote(&#x27;warning&#x27;, data.msg);&#xA;                    return false;&#xA;                }&#xA;                if(data.status == &#x27;503&#x27;) {&#xA;                    showNote(&#x27;warning&#x27;, data.msg);&#xA;                    return false;&#xA;                }&#xA;                if(data.status == -2000) {&#xA;                    showNote(&#x27;warning&#x27;, &#x27;Failed to dispense. Kindly contact customer support with your transaction id.&#x27;);&#xA;                } else {&#xA;                    if(data.status == 2000) {&#xA;                        showNote(&#x27;success&#x27;, &#x27;Your subscription has been successfully renewed.&#x27;);&#xA;                    }&#xA;                }&#xA;            },&#xA;            fail: function(error) {&#xA;                console.log(error);&#xA;                showNote(&#x27;error&#x27;, &#x27;An error occured trying to make your request. Please try again.&#x27;);&#xA;                return false;&#xA;            }&#xA;        });&#xA;    } catch (error) {&#xA;        console.log(error);&#xA;        showNote(&#x27;error&#x27;, &#x27;For some reasons we could not proceed with your request. Please check your internet connection/proxy configuration and try again.&#x27;);&#xA;    }&#xA;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;This is my error message&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;message &amp;quot;Object of class stdClass could not be converted to string&amp;quot;&#xA;exception   &amp;quot;ErrorException&amp;quot;&#xA;file    &amp;quot;/home2/xxxxx/xxxxx/vendor/monolog/monolog/src/Monolog/Logger.php&amp;quot;&#xA;line    329&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/64761250</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Suitescript how to add plugin to external library</title>
+            <category scheme="https://stackoverflow.com/tags" term="leaflet" />
+            <category scheme="https://stackoverflow.com/tags" term="netsuite" />
+            <category scheme="https://stackoverflow.com/tags" term="suitescript2.0" />
+        <author>
+            <name>enfrost</name>
+            <uri>https://stackoverflow.com/users/6211229</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/64761250/suitescript-how-to-add-plugin-to-external-library" />
+        <published>2020-11-10T00:40:01Z</published>
+        <updated>2020-11-10T00:40:01Z</updated>
+        <summary type="html">
+            &lt;p&gt;I have had success adding external libraries using define and also @NAmdConfig. However one library is leaflet and there are several plugins that I can&#x27;t get to work with it.&lt;/p&gt;&#xA;&lt;p&gt;Typically you use leaflet with &amp;quot;L&amp;quot; but adding a plugin you do things like L.Geodesic. Doing that you get the error &amp;quot;L.Geodesic is not a constructor.&amp;quot;&lt;/p&gt;&#xA;&lt;p&gt;If I define Geodesic on it&#x27;s own and use it I get an error about using it before it is initialized.&lt;/p&gt;&#xA;&lt;p&gt;I&#x27;m not really sure the proper way to link this. I had the same issue with maki markers but it was small enough I could just add the anonymous functions to my client script to get it working (not ideal in the event the library gets updated).&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;define([&#x27;L&#x27;, &#x27;N/search&#x27;, &#x27;Geodesic&#x27;],&#xA;&#xA;  function(L, search, geodesic) {&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/64761248</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Generating a number in a class in Python gets me a weird error</title>
+            <category scheme="https://stackoverflow.com/tags" term="python" />
+            <category scheme="https://stackoverflow.com/tags" term="function" />
+            <category scheme="https://stackoverflow.com/tags" term="class" />
+        <author>
+            <name>Aron Mlodkowski</name>
+            <uri>https://stackoverflow.com/users/12144830</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/64761248/generating-a-number-in-a-class-in-python-gets-me-a-weird-error" />
+        <published>2020-11-10T00:39:39Z</published>
+        <updated>2020-11-10T00:42:13Z</updated>
+        <summary type="html">
+            &lt;p&gt;So I am new to class in Python but not new to classes in general.&#xA;I want to generate a new number in the object I create, and constantly change it.&lt;/p&gt;&#xA;&lt;p&gt;So I did&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;    class ArmedBandit1:&#xA;        num = 0&#xA;        def spin():&#xA;            num = random(10)&#xA;    &#xA;    a1 = ArmedBandit1()&#xA;    &#xA;    a1.spin()&#xA;    print(a1.num)&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Now I get an error&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;Traceback (most recent call last):&#xA;  File &amp;quot;main.py&amp;quot;, line 9, in &amp;lt;module&amp;gt;&#xA;    a1.spin()&#xA;TypeError: spin() takes 0 positional arguments but 1 was given&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;But I didn&#x27;t give it any arguments, and if I try to remove the &amp;quot;()&amp;quot; it ignores the method.&lt;/p&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/64761213</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Apache Tomcat 8.5 starting returning 404</title>
+            <category scheme="https://stackoverflow.com/tags" term="java" />
+            <category scheme="https://stackoverflow.com/tags" term="tomcat" />
+            <category scheme="https://stackoverflow.com/tags" term="jersey" />
+            <category scheme="https://stackoverflow.com/tags" term="tomcat8" />
+            <category scheme="https://stackoverflow.com/tags" term="tomcat8.5" />
+        <author>
+            <name>Dylan Stables</name>
+            <uri>https://stackoverflow.com/users/5939800</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/64761213/apache-tomcat-8-5-starting-returning-404" />
+        <published>2020-11-10T00:33:53Z</published>
+        <updated>2020-11-10T00:41:42Z</updated>
+        <summary type="html">
+            &lt;p&gt;so I&#x27;ve been building an API using Jersey and Apache Tomcat 8.5, the API was running fine and working and randomly I can only get 404 even when accessing localhost:8080. I&#x27;m new to this tech so was wondering if anyone can help.&lt;/p&gt;&#xA;&lt;p&gt;Here is my web.xml in my API project.&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;&#xA;&amp;lt;web-app xmlns:xsi=&amp;quot;http://www.w3.org/2001/XMLSchema-instance&amp;quot; xmlns=&amp;quot;http://xmlns.jcp.org/xml/ns/javaee&amp;quot; xsi:schemaLocation=&amp;quot;http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd&amp;quot; version=&amp;quot;3.1&amp;quot;&amp;gt;&#xA;  &amp;lt;servlet&amp;gt;&#xA;    &amp;lt;servlet-name&amp;gt;Jersey REST Service&amp;lt;/servlet-name&amp;gt;&#xA;    &amp;lt;servlet-class&amp;gt;org.glassfish.jersey.servlet.ServletContainer&amp;lt;/servlet-class&amp;gt;&#xA;    &amp;lt;init-param&amp;gt;&#xA;        &amp;lt;param-name&amp;gt;jersey.config.server.provider.packages&amp;lt;/param-name&amp;gt;&#xA;        &amp;lt;param-value&amp;gt;net.codejava&amp;lt;/param-value&amp;gt;&#xA;    &amp;lt;/init-param&amp;gt;&#xA;     &amp;lt;init-param&amp;gt;&#xA;        &amp;lt;param-name&amp;gt;com.sun.jersey.api.json.POJOMappingFeature&amp;lt;/param-name&amp;gt;&#xA;        &amp;lt;param-value&amp;gt;true&amp;lt;/param-value&amp;gt;&#xA;    &amp;lt;/init-param&amp;gt;&#xA;    &amp;lt;load-on-startup&amp;gt;1&amp;lt;/load-on-startup&amp;gt;&#xA;&amp;lt;/servlet&amp;gt;&#xA;&amp;lt;servlet-mapping&amp;gt;&#xA;    &amp;lt;servlet-name&amp;gt;Jersey REST Service&amp;lt;/servlet-name&amp;gt;&#xA;    &amp;lt;url-pattern&amp;gt;/rest/*&amp;lt;/url-pattern&amp;gt;&#xA;&amp;lt;/servlet-mapping&amp;gt;&#xA;&amp;lt;/web-app&amp;gt;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;When doing this I was messing around with the CORS Policy but even after commenting it out I still get 404. I also had a pop up with something to do with change of source but I just clicked okay. My project is still added to the tomcat server, I&#x27;ve tried cleaning and building, also re-adding the project. There are no errors in my eclipse workspace. I&#x27;ve also been comparing my files to the local history to see if I&#x27;ve just added any typos accidentally but can&#x27;t find any.&lt;/p&gt;&#xA;&lt;p&gt;Just to re-iterate I don&#x27;t believe I&#x27;ve changed any of these files and I&#x27;ve been posting to my server http://localhost:8080/myappname/rest/auth succesfully for a few days.&lt;/p&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/64761206</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Creating a custom float class by inheritance in python</title>
+            <category scheme="https://stackoverflow.com/tags" term="python" />
+            <category scheme="https://stackoverflow.com/tags" term="python-3.x" />
+            <category scheme="https://stackoverflow.com/tags" term="constructor" />
+            <category scheme="https://stackoverflow.com/tags" term="floating-point" />
+            <category scheme="https://stackoverflow.com/tags" term="precision" />
+        <author>
+            <name>Anurag Saksena</name>
+            <uri>https://stackoverflow.com/users/14530612</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/64761206/creating-a-custom-float-class-by-inheritance-in-python" />
+        <published>2020-11-10T00:32:48Z</published>
+        <updated>2020-11-10T00:39:28Z</updated>
+        <summary type="html">
+            &lt;p&gt;I am trying to create a custom float class &#x27;Float&#x27; in Python by inheriting the float class and overloading the operators associated with it. I am overloading the arithmetic operators associated with the class so as to obtain the precision of the decimal.Decimal class for arithmetic calculations while maintaining the performance of the float class which is far better than that of the decimal.Decimal class.&lt;/p&gt;&#xA;&lt;p&gt;This way, I do not need to use the round() function or string formatting whenever I need to display a human readable output.&lt;/p&gt;&#xA;&lt;p&gt;This is my code with only the addition operator overloaded:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;class Float(float): #custom float class&#xA;    def Float(self,value): #Constructor like method&#xA;        self.value = value&#xA;&#xA;    def count_decimal_places(float_num): #Counts decimal places for rounding&#xA;        if type(float_num) == int:&#xA;            return 0&#xA;        return len(str(float_num).split(&#x27;.&#x27;)[1])&#xA;&#xA;    def __add__(self, other): #rounds results to the higher number of decimal places&#xA;        return round(self.value &#x2B;other.value, max(self.count_decimal_places(self.value), self.count_decimal_places(other.value))&#xA;&#xA;fo = Float()&#xA;fo.Float(3.6)&#xA;fo2 = Float()&#xA;fo2.Float(5.6)&#xA;print(fo &#x2B; fo2)&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;When I used a constructor directly in the class to assign a value to the &#x27;value&#x27; attribute, that did not work.&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;    class Float(float):&#xA;            def init(self,value):&#xA;                    self.value = value&#xA;            def count_decimal_places(float_num):&#xA;                    if type(float_num) == int:&#xA;                            return 0&#xA;                    return len(str(float_num).split(&#x27;.&#x27;)[1])&#xA;            def __add__(self, other):&#xA;                    return round(self.value &#x2B;other.value, max(self.count_decimal_places(self.value), self.count_decimal_places(other.value))&#xA;&#xA;    fo = Float(3.6)&#xA;    fo2 = Float(5.6)&#xA;    print(fo &#x2B; fo2)        &#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;It generated a syntax error. This is why I used a constructor like method instead in the first code.&lt;/p&gt;&#xA;&lt;p&gt;Also the &lt;strong&gt;init&lt;/strong&gt; method exists for class float in Python and shows up in print(dir(float)) but I am unable to ascertain what it does so I have not used the predefined constructor of class float.&lt;/p&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/64761201</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Java says &quot;Uncompilable source code - Erroneous tree type: culminatinggF.Flight&quot; issue [duplicate]</title>
+            <category scheme="https://stackoverflow.com/tags" term="java" />
+            <category scheme="https://stackoverflow.com/tags" term="arrays" />
+            <category scheme="https://stackoverflow.com/tags" term="class" />
+            <category scheme="https://stackoverflow.com/tags" term="object" />
+            <category scheme="https://stackoverflow.com/tags" term="arraylist" />
+        <author>
+            <name>Rayaan Khan</name>
+            <uri>https://stackoverflow.com/users/14260397</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/64761201/java-says-uncompilable-source-code-erroneous-tree-type-culminatinggf-flight" />
+        <published>2020-11-10T00:32:13Z</published>
+        <updated>2020-11-10T00:40:53Z</updated>
+        <summary type="html">
+            &lt;p&gt;I have been working on a project for school and have a question regarding my code. I am creating a flight management program and created a class called &amp;quot;Flight&amp;quot; the idea being that this class would be made for a route and would store my &amp;quot;Passenger objects&amp;quot; However upon running the program it presents the following error:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;Exception in thread &amp;quot;main&amp;quot; java.lang.RuntimeException: Uncompilable source code - Erroneous tree type: culminatingf.Flight&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;I have made the following attempts to resolve the issue:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;p&gt;Check if all are in the same package&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;p&gt;Ensure packages are labelled properly&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;p&gt;Check for obvious errors&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;p&gt;Change the code in main so it says:&lt;/p&gt;&#xA;&lt;p&gt;ArrayList Switzerland = new ArrayList&amp;lt;&amp;gt;();&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;None of these seemed to work and I am already attempting a project that is a bit out of my knowledge. Any Ideas what the issue could be?&lt;/p&gt;&#xA;&lt;p&gt;Main class below - as a side note if the formatting of my question is incorrect please let me know!&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;package culminatingf;&#xA;import java.util.*;&#xA;import java.io.*;&#xA;&#xA;import static java.lang.System.out; // shorten output statement&#xA;&#xA;public class CulminatingF {&#xA;&#xA;static public Scanner scanS = new Scanner(System.in); // Global Str Scanner&#xA;static public Scanner scanN = new Scanner(System.in); // Global Num Scanner  &#xA;&#xA;public static void main(String[] args) {&#xA;    &#xA;    // this is where the error is, If i comment these out it goes away.&#xA;    Flight Switzerland;&#xA;   &#xA;    out.print(&amp;quot;\n   MENU - please select by #&amp;quot;&#xA;               &#x2B; &amp;quot;\n\n1) Edit Passenger Info&amp;quot;&#xA;               &#x2B; &amp;quot;\n2) Add passenger&amp;quot;&#xA;               &#x2B; &amp;quot;\n3) Remove passenger&amp;quot;&#xA;               &#x2B; &amp;quot;\n4) View Profit Record&amp;quot;&#xA;               &#x2B; &amp;quot;\n5) Exit --&amp;gt; &amp;quot;);&#xA;    int choice = scanN.nextInt();&#xA;    &#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Flight class below&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;package culminatingF;&#xA;import java.util.ArrayList;&#xA;&#xA;public class Flight {&#xA;&#xA;private ArrayList&amp;lt;Passenger&amp;gt; passList = new ArrayList&amp;lt;&amp;gt;();&#xA;&#xA;// arg-construcctor&#xA;public Flight (ArrayList&amp;lt;Passenger&amp;gt; pl) {&#xA;    passList = pl;&#xA;}&#xA;&#xA;public void setPassList(ArrayList&amp;lt;Passenger&amp;gt; pl) {&#xA;    passList = pl;&#xA;}&#xA;&#xA;public ArrayList&amp;lt;Passenger&amp;gt; getPassList() {&#xA;    return passList;&#xA;}&#xA;        &#xA;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;My passenger class&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;/*&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;To change this license header, choose License Headers in Project Properties.&lt;/li&gt;&#xA;&lt;li&gt;To change this template file, choose Tools | Templates&lt;/li&gt;&#xA;&lt;li&gt;and open the template in the editor.&#xA;*/&#xA;package culminatingf;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;public class Passenger {&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;//field&#xA;private String name;&#xA;private String email;&#xA;private String destination;&#xA;private String cardInfo;&#xA;private String phoneNum;&#xA;private int seat;&#xA;&#xA;&#xA;//arg constructor&#xA;public Passenger(String n, String e, String d, String c, String p, int s) &#xA;{&#xA;    name = n;&#xA;    email = e;&#xA;    destination = d;&#xA;    cardInfo = c;&#xA;    phoneNum = p;&#xA;    seat = s;&#xA;    &#xA;}&#xA;&#xA;//Accessors&#xA;public String getName() {&#xA;    return name;&#xA;}&#xA;&#xA;public String getEmail() {&#xA;    return email;&#xA;}&#xA;&#xA;public String cardInfo() {&#xA;    return cardInfo;&#xA;}&#xA;&#xA;public String getphoneNum() {&#xA;    return phoneNum;&#xA;}&#xA;&#xA;public String getDestination() {&#xA;    return destination;&#xA;}&#xA;&#xA;public int getSeat() {&#xA;    return seat;&#xA;}&#xA;&#xA;//Mutator&#xA;public void setName(String n) {&#xA;    name = n;&#xA;}&#xA;&#xA;public void setEmail(String e) {&#xA;    email = e;&#xA;}&#xA;&#xA;public void setDestination (String d) {&#xA;    destination = d;&#xA;}&#xA;&#xA;public void setCardInfo(String c) {&#xA;    cardInfo = c;&#xA;}&#xA;&#xA;public void setPhoneNum(String p) {&#xA;    phoneNum = p;&#xA;}&#xA;&#xA;public void setSeat(int s) {&#xA;    seat = s;&#xA;}&#xA;&#xA;/**&#xA; * Method Name: toString&#xA; * Description: creates a String representing object state  &#xA; * @return state of the object&#xA; */&#xA;@Override&#xA;public String toString() {&#xA;    System.out.println();&#xA;    return &amp;quot;\nName: &amp;quot; &#x2B; name &#xA;            &#x2B; &amp;quot;\nEmail: &amp;quot; &#x2B; email &#xA;            &#x2B; &amp;quot;\nCard: &amp;quot; &#x2B; cardInfo &#xA;            &#x2B; &amp;quot;\nNumber: &amp;quot; &#x2B; phoneNum;&#xA;}&#xA;&#xA;/**&#xA; * Method Name: calcPrice&#xA; * Method Description: Calculates the price of this orders bill&#xA; * @return - order cost&#xA; */&#xA;public int profits() {&#xA;    int price = 0;&#xA;    &#xA;    //change price for each flavour&#xA;    switch(destination) {&#xA;        case &amp;quot;switzerland&amp;quot;:&#xA;            price = 1200;&#xA;            break;&#xA;        case &amp;quot;banff&amp;quot;:&#xA;            price = 520;&#xA;            break;&#xA;        case &amp;quot;iceland&amp;quot;:&#xA;            price = 1000;&#xA;            break;&#xA;    }&#xA;    return price;&#xA;}    &#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;}&lt;/p&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/64761154</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">How can I make this program return a result?</title>
+            <category scheme="https://stackoverflow.com/tags" term="java" />
+            <category scheme="https://stackoverflow.com/tags" term="return" />
+        <author>
+            <name>onlinegamerunibro</name>
+            <uri>https://stackoverflow.com/users/14525743</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/64761154/how-can-i-make-this-program-return-a-result" />
+        <published>2020-11-10T00:25:30Z</published>
+        <updated>2020-11-10T00:40:43Z</updated>
+        <summary type="html">
+            &lt;p&gt;I have been working on this program.&lt;/p&gt;&#xA;&lt;p&gt;One of the requirements were the following:&#xA;&lt;em&gt;Write a program that is split in to methods at least one of which returns a result&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;It don&#x27;t have any errors but I need to make it return a result in order for it to work properly. More specifically to add a method that returns a result.&lt;/p&gt;&#xA;&lt;p&gt;This is the program:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;import java.util.Scanner; // Needed to make Scanner available&#xA;&#xA;public class BodyAge {&#xA;&#xA;    public static void main(String[] args) {&#xA;&#xA;        CalculateAge();&#xA; &#xA;    } // END of main method&#xA;&#xA;    // Inserting age and heart rate and stretch distance &#xA;    //and calculates the body age based on conditions&#xA;&#xA;    public static void CalculateAge() {&#xA; &#xA;        int age;&#xA;        int heartRate;&#xA;        int stretch;&#xA;&#xA;        Scanner input = new Scanner(System.in);&#xA;&#xA;        System.out.print(&amp;quot;What is your age? &amp;quot;); &#xA;&#xA;        age = input.nextInt();&#xA; &#xA;        System.out.print(&amp;quot;What is your heart rate? &amp;quot;); &#xA;&#xA;        heartRate = input.nextInt();&#xA;&#xA;        if (heartRate &amp;lt;= 62) {&#xA;            age -= 5;          // block of code to be executed if condition1 is true&#xA;        } else if (62 &amp;lt;= heartRate &amp;amp;&amp;amp; heartRate &amp;lt;= 64) {&#xA;            age--;            // block of code to be executed if the condition1 is false and condition2 is&#xA;                              // true&#xA;        } else if (65 &amp;lt;= heartRate &amp;amp;&amp;amp; heartRate &amp;lt;= 70) {&#xA;            age&#x2B;&#x2B;;           // block of code to be executed if the condition1 and condition2 are false and &#xA;                             // condition3 is true&#xA;        } else {&#xA;            age &#x2B;= 2;       // block of code to be executed if the condition1 and condition2 and condition3&#xA;                            // are false and condition4 is true&#xA;        }&#xA;&#xA;        System.out.print(&amp;quot;How far can you stretch? &amp;quot;); &#xA;&#xA;        stretch = input.nextInt();&#xA; &#xA;        if (stretch &amp;lt;= 20) {&#xA;            age &#x2B;= 4;      // block of code to be executed if condition1 is true&#xA;        } else if (20 &amp;lt;= stretch &amp;amp;&amp;amp; stretch &amp;lt;= 32) {&#xA;            age&#x2B;&#x2B;;         // block of code to be executed if the condition1 is false and condition2 is&#xA;                           // true&#xA;        } else if (33 &amp;lt;= stretch &amp;amp;&amp;amp; stretch &amp;lt;= 37) {&#xA;            age = age &#x2B; 0; // block of code to be executed if the condition1 and condition2 are false and&#xA;                           // condition3 is true&#xA;        } else {&#xA;            age = age &#x2B; 3; // block of code to be executed if the condition1 and condition2 and condition3&#xA;                           // are false and condition4 is true&#xA;        }&#xA;&#xA;        System.out.println(&amp;quot;Your body&#x27;s age is &amp;quot; &#x2B; age);&#xA;&#xA;    }  //END of CalculateAge&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/64761119</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">TweetNaCl.js minimal Public-key signatures example</title>
+            <category scheme="https://stackoverflow.com/tags" term="javascript" />
+            <category scheme="https://stackoverflow.com/tags" term="node.js" />
+            <category scheme="https://stackoverflow.com/tags" term="cryptography" />
+            <category scheme="https://stackoverflow.com/tags" term="tweet-nacl" />
+        <author>
+            <name>Dshiz</name>
+            <uri>https://stackoverflow.com/users/1551027</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/64761119/tweetnacl-js-minimal-public-key-signatures-example" />
+        <published>2020-11-10T00:21:13Z</published>
+        <updated>2020-11-10T00:40:51Z</updated>
+        <summary type="html">
+            &lt;p&gt;I am trying to understand how to implement a minimal basic Public-key signature example based on the demo located &lt;a href=&quot;https://tweetnacl.js.org/#/sign&quot; rel=&quot;nofollow noreferrer&quot;&gt;here&lt;/a&gt;, using pure javascript.&lt;/p&gt;&#xA;&lt;p&gt;My research has not yielded a simple javascript example that I can use to understand its inner workings, and the &lt;a href=&quot;https://github.com/dchest/tweetnacl-js/blob/master/README.md#documentation&quot; rel=&quot;nofollow noreferrer&quot;&gt;documentation&lt;/a&gt; is over my head at the moment.&lt;/p&gt;&#xA;&lt;p&gt;I tried looking at the &lt;a href=&quot;http://view-source:https://tweetnacl.js.org/#/sign&quot; rel=&quot;nofollow noreferrer&quot;&gt;source code&lt;/a&gt; of the demo, but it is not revealing its secrets.&lt;/p&gt;&#xA;&lt;p&gt;The library&#x27;s &lt;a href=&quot;https://github.com/dchest/tweetnacl-js/wiki/Examples&quot; rel=&quot;nofollow noreferrer&quot;&gt;examples&lt;/a&gt; does not have an example for this either.&lt;/p&gt;&#xA;&lt;p&gt;Cryptography is something very new to me, so any baseline example of how to create their Public-key example with pure javascript in node.js would be greatly appreciated!&lt;/p&gt;&#xA;&lt;p&gt;Pseudocode-ish:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;const nacl = require(&#x27;tweetnacl&#x27;)&#xA;let message = &amp;quot;This is my unencrypted message&amp;quot;&#xA;let naclPair = nacl.sign.keyPair()&#xA;let signedMessage = nacl.sign(message, naclPair.secretKey)&#xA;let decrypted = nacl.sign.open(signedMessage, naclPair.publicKey) // is this right?&#xA;console.log(decrypted) // should this print the decrypted message?&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;As a side note, I&#x27;m more familiar with node.js &lt;code&gt;require&lt;/code&gt;, than I am with ES6 &lt;code&gt;import&lt;/code&gt;, if that has any bearing on answers here and could help demonstrate how to use this library.&lt;/p&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/64761099</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Why doesn&#x27;t the Text update when using @Binding?</title>
+            <category scheme="https://stackoverflow.com/tags" term="swift" />
+            <category scheme="https://stackoverflow.com/tags" term="swiftui" />
+        <author>
+            <name>joels</name>
+            <uri>https://stackoverflow.com/users/251420</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/64761099/why-doesnt-the-text-update-when-using-binding" />
+        <published>2020-11-10T00:18:44Z</published>
+        <updated>2020-11-10T00:40:25Z</updated>
+        <summary type="html">
+            &lt;p&gt;The &lt;code&gt;Working&lt;/code&gt; works as expected.&lt;/p&gt;&#xA;&lt;p&gt;But using the &lt;code&gt;@Binding&lt;/code&gt; in the &lt;code&gt;NotWorking&lt;/code&gt; example, doesn&#x27;t seem to update the &lt;code&gt;Text&lt;/code&gt; control. Why doesn&#x27;t the &lt;code&gt;@Binding&lt;/code&gt; version work, what am I missing here?&lt;/p&gt;&#xA;&lt;p&gt;Initial Launch:&#xA;&lt;img src=&quot;https://i.stack.imgur.com/PfMQK.png&quot; alt=&quot;Initial Launch&quot; /&gt;&lt;/p&gt;&#xA;&lt;p&gt;After Typing:&#xA;&lt;img src=&quot;https://i.stack.imgur.com/QISK8.png&quot; alt=&quot;After typing&quot; /&gt;&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;struct Working: View {&#xA;    //Binding from @State updates both controls&#xA;    @State private var text = &amp;quot;working&amp;quot;&#xA;    &#xA;    var body: some View {&#xA;        VStack {&#xA;            TextField(&amp;quot;syncs to label...&amp;quot;, text: $text)&#xA;            Text($text.wrappedValue)&#xA;        }&#xA;    }&#xA;}&#xA;struct NotWorking: View {&#xA;    //Using the @Binding only updates the TextField&#xA;    @Binding var text: String&#xA;    &#xA;    var body: some View {&#xA;        //This does not works&#xA;        VStack {&#xA;            TextField(&amp;quot;won&#x27;t sync to label...&amp;quot;, text: $text)&#xA;            Text($text.wrappedValue)&#xA;        }&#xA;    }&#xA;}&#xA;&#xA;struct Working_Previews: PreviewProvider {&#xA;    @State static var text = &amp;quot;not working&amp;quot;&#xA;    static var previews: some View {&#xA;        VStack {&#xA;            Working()&#xA;            NotWorking(text: $text)&#xA;        }&#xA;    }&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/64761059</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Getting duplicated entries of interfaces in a Dictionary</title>
+            <category scheme="https://stackoverflow.com/tags" term="c#" />
+            <category scheme="https://stackoverflow.com/tags" term="inheritance" />
+            <category scheme="https://stackoverflow.com/tags" term="interface" />
+            <category scheme="https://stackoverflow.com/tags" term="overriding" />
+            <category scheme="https://stackoverflow.com/tags" term="equals" />
+        <author>
+            <name>Pedro Costa</name>
+            <uri>https://stackoverflow.com/users/10216879</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/64761059/getting-duplicated-entries-of-interfaces-in-a-dictionary" />
+        <published>2020-11-10T00:13:52Z</published>
+        <updated>2020-11-10T00:40:00Z</updated>
+        <summary type="html">
+            &lt;p&gt;So i have an interface named &lt;code&gt;IResource&lt;/code&gt; that consist of those 5 properties as readonly but since I am adding those to a &lt;code&gt;Dictionary&amp;lt;IResource, int&amp;gt;&lt;/code&gt; i need a way to compare two &lt;code&gt;IResource&lt;/code&gt; so i don&#x27;t have duplicates in the Dictionary. Is there a way for me to add a default &lt;code&gt;Equals(object obj)&lt;/code&gt; to every IResource?&#xA;I already added an &lt;code&gt;Equals&lt;/code&gt; Override to the &lt;code&gt;Wood&lt;/code&gt; class and it solved the problem but i would have to add a &lt;code&gt;Equals(object obj)&lt;/code&gt; in every class that implements the &lt;code&gt;IResource&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;public class Wood : IResource&#xA;{&#xA;    public string Package =&amp;gt; &amp;quot;Core&amp;quot;;&#xA;&#xA;    public string Family =&amp;gt; &amp;quot;Wood&amp;quot;;&#xA;&#xA;    public string Name =&amp;gt; &amp;quot;Wood&amp;quot;;&#xA;&#xA;    public bool IsFractal =&amp;gt; false;&#xA;&#xA;    public ResourceType Type =&amp;gt; ResourceType.Natural;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;PS:I have an override of the &lt;code&gt;Add(IResource key, uint value)&lt;/code&gt; method to the dictionary to check if the &lt;code&gt;IResource&lt;/code&gt; already exists.&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;    public new void Add(IResource key, uint value)&#xA;    {&#xA;        if (base.ContainsKey(key))&#xA;            base[key] &#x2B;= value;&#xA;        else&#xA;            base.Add(key, value);&#xA;    }&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Right now when i add a &lt;code&gt;IResource&lt;/code&gt; interface to the dictionary, it always adds a new entry.&lt;/p&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/64760858</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Swift - How to set spacing between variable number of buttons in Horizontal StackView?</title>
+            <category scheme="https://stackoverflow.com/tags" term="swift" />
+            <category scheme="https://stackoverflow.com/tags" term="autolayout" />
+            <category scheme="https://stackoverflow.com/tags" term="nslayoutconstraint" />
+            <category scheme="https://stackoverflow.com/tags" term="uistackview" />
+        <author>
+            <name>Sotiris Kaniras</name>
+            <uri>https://stackoverflow.com/users/4388495</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/64760858/swift-how-to-set-spacing-between-variable-number-of-buttons-in-horizontal-stac" />
+        <published>2020-11-09T23:45:52Z</published>
+        <updated>2020-11-10T00:39:36Z</updated>
+        <summary type="html">
+            &lt;p&gt;I&#x27;m using a horizontal &lt;code&gt;UIStackView&lt;/code&gt; that can contain up to 3 &lt;code&gt;UIButton&lt;/code&gt;s. (could be just 1, could be 2, or 3)&lt;/p&gt;&#xA;&lt;p&gt;I want to have them centered, with the same space between each of them, like so:&#xA;&lt;a href=&quot;https://i.stack.imgur.com/eg6XI.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/eg6XI.png&quot; alt=&quot;enter image description here&quot; /&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;I don&#x27;t seem to be able to pull this off... I&#x27;ve tried every combination of &lt;code&gt;Distribution&lt;/code&gt; and &lt;code&gt;Alignment&lt;/code&gt;, but I can&#x2019;t get it right.&lt;/p&gt;&#xA;&lt;p&gt;Here&#x27;s the &lt;code&gt;stackView&lt;/code&gt;&#x27;s constraints:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;fileprivate func setupStackViewConstraints() {&#xA;    stackView.translatesAutoresizingMaskIntoConstraints = false&#xA;    &#xA;    NSLayoutConstraint.activate([&#xA;        stackView.topAnchor.constraint(equalToConstant: 60),&#xA;        stackView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),&#xA;        stackView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),&#xA;        stackView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)&#xA;    ])&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;And here&#x27;s the buttons&#x27; constraints:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;fileprivate func setupFacebookButton() {&#xA;    let facebookButton = UIButton()&#xA;    &#xA;    facebookButton.setImage(UIImage(named: &amp;quot;facebookSocialIcon&amp;quot;), for: .normal)&#xA;    facebookButton.imageView?.contentMode = .scaleAspectFit&#xA;    facebookButton.addTarget(self, action: #selector(facebookButtonWasTapped), for: .touchUpInside)&#xA;    &#xA;    // -----------------------------------&#xA;    &#xA;    facebookButton.translatesAutoresizingMaskIntoConstraints = false&#xA;&#xA;    NSLayoutConstraint.activate([&#xA;        facebookButton.widthAnchor.constraint(equalToConstant: 40),&#xA;        facebookButton.heightAnchor.constraint(equalToConstant: 40)&#xA;    ])&#xA;    &#xA;    // -----------------------------------&#xA;    &#xA;    stackView.addArrangedSubview(facebookButton)&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Any ideas?&lt;/p&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/64760815</id>
+        <re:rank scheme="https://stackoverflow.com">1</re:rank>
+        <title type="text">React: how to avoid re-rendering a component with a hook that returns always the same value but changes its inner state</title>
+            <category scheme="https://stackoverflow.com/tags" term="javascript" />
+            <category scheme="https://stackoverflow.com/tags" term="reactjs" />
+            <category scheme="https://stackoverflow.com/tags" term="react-redux" />
+            <category scheme="https://stackoverflow.com/tags" term="react-hooks" />
+        <author>
+            <name>user3550446</name>
+            <uri>https://stackoverflow.com/users/3550446</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/64760815/react-how-to-avoid-re-rendering-a-component-with-a-hook-that-returns-always-the" />
+        <published>2020-11-09T23:40:42Z</published>
+        <updated>2020-11-10T00:40:41Z</updated>
+        <summary type="html">
+            &lt;p&gt;imagine to have this hook that changes his value every second and returns true if the random value is a multiple of 5 otherwise false.&#xA;what can I do to stop re-rendering every second?&lt;/p&gt;&#xA;&lt;p&gt;PS: I tried useMemo, and useRef to return back always the same object but it&#x27;s still re-rendering.&lt;/p&gt;&#xA;&lt;p&gt;please help&lt;/p&gt;&#xA;&lt;p&gt;&lt;div class=&quot;snippet&quot; data-lang=&quot;js&quot; data-hide=&quot;false&quot; data-console=&quot;true&quot; data-babel=&quot;false&quot;&gt;&#xD;&#xA;&lt;div class=&quot;snippet-code&quot;&gt;&#xD;&#xA;&lt;pre class=&quot;snippet-code-js lang-js prettyprint-override&quot;&gt;&lt;code&gt;const useRandomIs5x = () =&amp;gt; {&#xA;  const [state, setState] = useState(0);&#xA;  useEffect(() =&amp;gt; {&#xA;    const t0 = setInterval(() =&amp;gt; {&#xA;      setState(getRandomValue())&#xA;    }, 1000)&#xA;    return () =&amp;gt; clearInterval(to)&#xA;  }, [])&#xA;  return state % 5 === 0;&#xA;}&#xA;&#xA;&#xA;const Root = () =&amp;gt; {&#xA;  const bool = useRandomIs5x();&#xA;  console.log(&quot;I&#x27;m re-rendering every second&quot;, bool)&#xA;  return &amp;lt;div&amp;gt;test&amp;lt;/div&amp;gt;&#xA;}&lt;/code&gt;&lt;/pre&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;/p&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/64760650</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Is it possible to open a minimized application in a C# console application and enter some value?</title>
+            <category scheme="https://stackoverflow.com/tags" term="c#" />
+            <category scheme="https://stackoverflow.com/tags" term="process" />
+            <category scheme="https://stackoverflow.com/tags" term="external" />
+        <author>
+            <name>Barrosy</name>
+            <uri>https://stackoverflow.com/users/3437688</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/64760650/is-it-possible-to-open-a-minimized-application-in-a-c-sharp-console-application" />
+        <published>2020-11-09T23:21:32Z</published>
+        <updated>2020-11-10T00:41:00Z</updated>
+        <summary type="html">
+            &lt;p&gt;I am trying to write a C# console application that opens a minimized application and then enter some kind of value. For this example I will try to open an exisiting minimized notepad.&lt;/p&gt;&#xA;&lt;p&gt;I tried to use the &lt;code&gt;System.Diagnostic.Process&lt;/code&gt; class and &lt;code&gt;ProcessHelper&lt;/code&gt; from a solution provided in &lt;a href=&quot;https://stackoverflow.com/questions/63471226/cannot-bring-a-process-to-the-front/63471769#63471769&quot;&gt;this&lt;/a&gt; question and the &lt;code&gt;FindWindow()&lt;/code&gt; method from a solution provided in &lt;a href=&quot;https://stackoverflow.com/questions/9099479/restore-a-minimized-window-of-another-application&quot;&gt;this&lt;/a&gt; question:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;class Program&#xA;{&#xA;    [DllImport(&amp;quot;user32.dll&amp;quot;)]&#xA;    public static extern IntPtr FindWindow(string className, string windowTitle);&#xA;&#xA;    static void Main(string[] args)&#xA;    {&#xA;        string someData;&#xA;        Process ExternalProcess = new Process();&#xA;        Console.WriteLine(&amp;quot;Enter some data:&amp;quot;);&#xA;        someData = Console.ReadLine();&#xA;        Console.WriteLine(&amp;quot;Data \&#x27;&amp;quot; &#x2B; someData &#x2B; &amp;quot;\&#x27; must now be entered in an external program.&amp;quot;);&#xA;        //ExternalProcess.StartInfo.FileName = &amp;quot;notepad.exe&amp;quot;;            &#xA;        //ExternalProcess.Start();&#xA;&#xA;        //This opens a new notepad (I tried this but it is not what I want):&#xA;        //ProcessStartInfo startInfo = new ProcessStartInfo(&amp;quot;notepad.exe&amp;quot;);&#xA;        //startInfo.WindowStyle = ProcessWindowStyle.Minimized;&#xA;&#xA;        // What should I add to the application title to open the minimized notepad?:&#xA;&#xA;        //IntPtr wdwIntPtr = FindWindow(null, &amp;quot;Notepad&amp;quot;);&#xA;&#xA;        // This does work, but not enter any value yet:&#xA;        ProcessHelper.BringProcessToFront(&amp;quot;Notepad&amp;quot;);&#xA;&#xA;        // How to enter &amp;quot;someData&amp;quot; into the opened notepad?&#xA;&#xA;        Console.ReadKey();&#xA;    }&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;What tool(s) could I use to achieve my goal?&lt;/p&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/64758727</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">How to preselect an item in a Kivy RecycleView?</title>
+            <category scheme="https://stackoverflow.com/tags" term="python-3.x" />
+            <category scheme="https://stackoverflow.com/tags" term="kivy" />
+        <author>
+            <name>Jean-Pierre Schnyder</name>
+            <uri>https://stackoverflow.com/users/500936</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/64758727/how-to-preselect-an-item-in-a-kivy-recycleview" />
+        <published>2020-11-09T20:21:02Z</published>
+        <updated>2020-11-10T00:40:32Z</updated>
+        <summary type="html">
+            &lt;p&gt;The code below displays a RecycleView filled with selectable lines. Initially, no item is selected. Pressing on one of the two buttons selects a line. My question is: how can we preselect an item so that one is selected at the dialog opening ?&lt;/p&gt;&#xA;&lt;p&gt;A solution would be to be able to set a callback function whiqh is called after the RecycleView has been displayed, but how ?&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;# -*- coding: utf-8 -*-&#xA;from kivy.app import App&#xA;from kivy.lang import Builder&#xA;from kivy.uix.boxlayout import BoxLayout&#xA;from kivy.uix.recycleview import RecycleView&#xA;from kivy.uix.recycleview.views import RecycleDataViewBehavior&#xA;from kivy.uix.label import Label&#xA;from kivy.properties import BooleanProperty, StringProperty, NumericProperty&#xA;from kivy.uix.recycleboxlayout import RecycleBoxLayout&#xA;from kivy.uix.behaviors import FocusBehavior&#xA;from kivy.uix.recycleview.layout import LayoutSelectionBehavior&#xA;&#xA;&#xA;kv = &amp;quot;&amp;quot;&amp;quot;&#xA;&#xA;&amp;lt;SelectableLabel&amp;gt;:&#xA;    # Draw a background to indicate selection&#xA;    canvas.before:&#xA;        Color:&#xA;            rgba: (0.4, 0.4, 0.4, 1) if self.selected else (0.5, 0.5, 0.5, 1)&#xA;        Rectangle:&#xA;            pos: self.pos&#xA;            size: self.size&#xA;&#xA;&amp;lt;KivyPlayer&amp;gt;:&#xA;    canvas:&#xA;        Color:&#xA;            rgba: 0.3, 0.3, 0.3, 1&#xA;        Rectangle:&#xA;            size: self.size&#xA;            pos: self.pos&#xA;    orientation: &#x27;vertical&#x27;&#xA;    BoxLayout:&#xA;        orientation: &#x27;vertical&#x27;&#xA;        BoxLayout:&#xA;            Button:&#xA;                id: next_track&#xA;                text: &amp;quot;Next Track&amp;quot;&#xA;                on_release: controller.select_next()&#xA;            Button:&#xA;                id: previous_track&#xA;                text: &amp;quot;Previous Track&amp;quot;&#xA;                on_release: controller.select_previous()&#xA;        BoxLayout:&#xA;            RecycleView:&#xA;                id: media_list&#xA;                viewclass: &#x27;SelectableLabel&#x27;&#xA;                scroll_type: [&#x27;bars&#x27;, &#x27;content&#x27;]&#xA;                scroll_wheel_distance: dp(114)&#xA;                bar_width: dp(10)&#xA;                SelectableRecycleBoxLayout:&#xA;                    id: controller&#xA;                    key_selection: &#x27;selectable&#x27;&#xA;                    default_size: None, dp(56)&#xA;                    default_size_hint: 1, None&#xA;                    size_hint_y: None&#xA;                    height: self.minimum_height&#xA;                    orientation: &#x27;vertical&#x27;&#xA;                    # multiselect: True&#xA;                    touch_multiselect: True&#xA;                    spacing: dp(2)&#xA;&#xA;&#xA;&amp;quot;&amp;quot;&amp;quot;&#xA;&#xA;Builder.load_string(kv)&#xA;&#xA;class SelectableRecycleBoxLayout(FocusBehavior, LayoutSelectionBehavior,&#xA;                                 RecycleBoxLayout):&#xA;    &#x27;&#x27;&#x27; Adds selection and focus behaviour to the view. &#x27;&#x27;&#x27;&#xA;&#xA;    # required to forbid unselecting a selected item. An item can be unselected&#xA;    # only by selecting another item&#xA;    touch_deselect_last = BooleanProperty(False)&#xA;&#xA;    def get_nodes(self):&#xA;        nodes = self.get_selectable_nodes()&#xA;        if self.nodes_order_reversed:&#xA;            nodes = nodes[::-1]&#xA;        if not nodes:&#xA;            return None, None&#xA;        &#xA;        selected = self.selected_nodes&#xA;        if not selected:  # nothing selected, select the first&#xA;            self.select_node(nodes[0])&#xA;            return None, None&#xA;        &#xA;        if len(nodes) == 1:  # the only selectable node is selected already&#xA;            return None, None&#xA;        &#xA;        last = nodes.index(selected[-1])&#xA;        self.clear_selection()&#xA;        return last, nodes&#xA;    &#xA;    &#xA;    def select_next(self):&#xA;        last, nodes = self.get_nodes()&#xA;        if not nodes:&#xA;            return&#xA;        &#xA;        if last == len(nodes) - 1:&#xA;            self.select_node(nodes[0])&#xA;        else:&#xA;            self.select_node(nodes[last &#x2B; 1])&#xA;    &#xA;    &#xA;    def select_previous(self):&#xA;        last, nodes = self.get_nodes()&#xA;        if not nodes:&#xA;            return&#xA;        &#xA;        if not last:&#xA;            self.select_node(nodes[-1])&#xA;        else:&#xA;            self.select_node(nodes[last - 1])&#xA;&#xA;&#xA;class SelectableLabel(RecycleDataViewBehavior, Label):&#xA;    &#x27;&#x27;&#x27; Add selection support to the Label &#x27;&#x27;&#x27;&#xA;    index = None&#xA;    selected = BooleanProperty(False)&#xA;    selectable = BooleanProperty(True)&#xA;&#xA;    def refresh_view_attrs(self, rv, index, data):&#xA;        &#x27;&#x27;&#x27; Catch and handle the view changes &#x27;&#x27;&#x27;&#xA;        self.index = index&#xA;        return super(SelectableLabel, self).refresh_view_attrs(&#xA;            rv, index, data)&#xA;&#xA;    def on_touch_down(self, touch):&#xA;        &#x27;&#x27;&#x27; Add selection on touch down &#x27;&#x27;&#x27;&#xA;        if super(SelectableLabel, self).on_touch_down(touch):&#xA;            return True&#xA;        if self.collide_point(*touch.pos) and self.selectable:&#xA;            return self.parent.select_with_touch(self.index, touch)&#xA;&#xA;    def apply_selection(self, rv, index, is_selected):&#xA;        &#x27;&#x27;&#x27; Respond to the selection of items in the view. &#x27;&#x27;&#x27;&#xA;        self.selected = is_selected&#xA;        if is_selected:&#xA;            print(&amp;quot;selection changed to {0}&amp;quot;.format(rv.data[index]))&#xA;        else:&#xA;            print(&amp;quot;selection removed for {0}&amp;quot;.format(rv.data[index]))&#xA;&#xA;&#xA;class KivyPlayer(BoxLayout):&#xA;    &#x27;&#x27;&#x27; Main Kivy class for creating the initial BoxLayout &#x27;&#x27;&#x27;&#xA;&#xA;    def __init__(self, **kwargs):&#xA;        super(KivyPlayer, self).__init__(**kwargs)&#xA;&#xA;        # Set media_list data&#xA;        self.ids.media_list.data = [{&#x27;text&#x27;: str(x), &#x27;selectable&#x27;: True} for x in range(100)]&#xA;&#xA;class KivyApp(App):&#xA;    def build(self):&#xA;        return KivyPlayer()&#xA;    &#xA;KivyApp().run()&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/64755045</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">How to loop through each excel file beginning &amp; ending with specific rows in a folder using Python</title>
+            <category scheme="https://stackoverflow.com/tags" term="python" />
+            <category scheme="https://stackoverflow.com/tags" term="excel" />
+            <category scheme="https://stackoverflow.com/tags" term="loops" />
+        <author>
+            <name>PyminIL</name>
+            <uri>https://stackoverflow.com/users/14339233</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/64755045/how-to-loop-through-each-excel-file-beginning-ending-with-specific-rows-in-a-f" />
+        <published>2020-11-09T16:02:51Z</published>
+        <updated>2020-11-10T00:41:43Z</updated>
+        <summary type="html">
+            &lt;p&gt;I want to loop through each excel file in a folder, all files beginning with 5th row &amp;amp; ending with specific rows.&#xA;I know how to loop through all files in a folder, the code is shown as below.&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;path = &#x27;/Users/XXXXX/Desktop/learning_append/all files&#x27;&#xA;files = os.listdir(path)&#xA;&#xA;files_xlsx = [f for f in files if f[-4:] == &#x27;xlsx&#x27;]&#xA;files_xlsx&#xA;&#xA;for f in files_xlsx:&#xA;    data = pd.read_excel(f, &#x27;file1&#x27;)&#xA;    df = df.append(data)    &#xA;df&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;I also know how to code for beginning with 5th row &amp;amp; ending with specific rows as shown below.&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;ending_index = df[df[&#x27;Column1&#x27;]== &amp;quot;Amendment:&amp;quot;].index.values&#xA;df.iloc[4:list(ending_index)[0]-1,:]&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;I think I need to define a function to the code above in order to do the same thing for each file in the folder. However, I don&#x27;t know how to define &amp;amp; combine these codes to achieve what I want, folks please help me out here.&lt;/p&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/64754523</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">can I redirect different home directories according to urls?</title>
+            <category scheme="https://stackoverflow.com/tags" term=".htaccess" />
+            <category scheme="https://stackoverflow.com/tags" term="codeigniter" />
+            <category scheme="https://stackoverflow.com/tags" term="nginx" />
+            <category scheme="https://stackoverflow.com/tags" term="apache2" />
+        <author>
+            <name>Ray</name>
+            <uri>https://stackoverflow.com/users/551919</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/64754523/can-i-redirect-different-home-directories-according-to-urls" />
+        <published>2020-11-09T15:29:56Z</published>
+        <updated>2020-11-10T00:39:14Z</updated>
+        <summary type="html">
+            &lt;p&gt;I have 2 codeignitor projects in different directories.&lt;/p&gt;&#xA;&lt;p&gt;what I want to do is&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;www.url.com =&amp;gt; /var/www/ci_project&#xA;www.url.com/page1 =&amp;gt; /var/www/ci_project&#xA;&#xA;www.url.com/en =&amp;gt; /home/another/ci_project&#xA;www.url.com/en/page1 =&amp;gt; /home/another/ci_project&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;That is, only if the &amp;quot;en/&amp;quot; come followed host we would use different ci project.&lt;/p&gt;&#xA;&lt;p&gt;However, it seems the apache alias cannot help because the ci mechanism would cover the path.&lt;/p&gt;&#xA;&lt;p&gt;Can I achieve this by apache2 or nginx?&lt;/p&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/64753818</id>
+        <re:rank scheme="https://stackoverflow.com">-3</re:rank>
+        <title type="text">How can I do differently so I can successfully use axios to fetch flight data with the API in the following code? [closed]</title>
+            <category scheme="https://stackoverflow.com/tags" term="reactjs" />
+        <author>
+            <name>Sylvester Somprey</name>
+            <uri>https://stackoverflow.com/users/14180103</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/64753818/how-can-i-do-differently-so-i-can-successfully-use-axios-to-fetch-flight-data-wi" />
+        <published>2020-11-09T14:46:42Z</published>
+        <updated>2020-11-10T00:40:39Z</updated>
+        <summary type="html">
+            &lt;p&gt;Please check the ff code which keeps trowing the error message &amp;quot;./src/Components/Home.js&#xA;SyntaxError: /Users/somprey/Documents/Projects/Booking App/Front End/booking/src/Components/Home.js: &#x27;import&#x27; and &#x27;export&#x27; may only appear at the top level (41:2)&amp;quot; please help.&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;import React from &amp;quot;react&amp;quot;;&#xA;import { Link } from &amp;quot;react-router-dom&amp;quot;;&#xA;import Hero from &amp;quot;./Hero&amp;quot;;&#xA;&#xA;import axios from &amp;quot;axios&amp;quot;;&#xA;&#xA;&#xA;&#xA;export const fetchFlights = (endAirport, startAirport, startDate, endDate) =&amp;gt; {&#xA;  return async (dispatch) =&amp;gt; {&#xA;    try {&#xA;      const flights = await axios({&#xA;        url: `https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browseroutes/v1.0/US/USD/en-US/${startAirport}/${endAirport}/${startDate}/${endDate}`,&#xA;        method: &amp;quot;GET&amp;quot;,&#xA;        headers: {&#xA;          &amp;quot;X-RapidAPI-Key&amp;quot;:&#xA;            &amp;quot;d030dc7e0cmsh3c7f2f835c26c91p141019jsn01774bc83181&amp;quot;,&#xA;        },&#xA;      });&#xA;      dispatch(getFlights(flights.data));&#xA;    } catch (error) {&#xA;      console.log(error);&#xA;    }&#xA;  };&#xA;&#xA;  const mapState = (state) =&amp;gt; {&#xA;    return {&#xA;      flights: state.flight,&#xA;    };&#xA;  };&#xA;&#xA;  const mapDispatch = (dispatch) =&amp;gt; {&#xA;    return {&#xA;      getFlights: (endAirport, startAirport, startDate, endDate) =&amp;gt;&#xA;        dispatch(fetchFlights(endAirport, startAirport, startDate, endDate)),&#xA;    };&#xA;  };&#xA;&#xA;  export default connect(mapState, mapDispatch)(SingleTrip);&#xA;};&#xA;&#xA;&#xA;&#xA;  return (&#xA;    &amp;lt;&amp;gt;&#xA;      &amp;lt;travelDate /&amp;gt;&#xA;      &amp;lt;Hero hero=&amp;quot;defaultHero&amp;quot; /&amp;gt;&#xA;      &amp;lt;div className=&amp;quot;container &amp;quot;&amp;gt;&#xA;        &amp;lt;div className=&amp;quot;row-pt-3&amp;quot; /&amp;gt;&#xA;        &amp;lt;div className=&amp;quot;col-md-3 border&amp;quot; /&amp;gt;&#xA;        &amp;lt;div className=&amp;quot;bg-primary&amp;quot; /&amp;gt;&#xA;        &amp;lt;ul className=&amp;quot;homelinks&amp;quot;&amp;gt;&#xA;          &amp;lt;Link style={newStyle} to=&amp;quot;/flights&amp;quot;&amp;gt;&#xA;            &amp;lt;li list&amp;gt;Flights&amp;lt;/li&amp;gt;&#xA;          &amp;lt;/Link&amp;gt;&#xA;          &amp;lt;Link style={newStyle} to=&amp;quot;/hotels&amp;quot;&amp;gt;&#xA;            &amp;lt;li&amp;gt;Hotels&amp;lt;/li&amp;gt;&#xA;          &amp;lt;/Link&amp;gt;&#xA;        &amp;lt;/ul&amp;gt;&#xA;      &amp;lt;/div&amp;gt;&#xA;    &amp;lt;/&amp;gt;&#xA;  );&#xA;}&#xA;&#xA;export default Home;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/64751473</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">How to Vertically Bootstrap&#x27;s List Group Text</title>
+            <category scheme="https://stackoverflow.com/tags" term="html" />
+            <category scheme="https://stackoverflow.com/tags" term="css" />
+            <category scheme="https://stackoverflow.com/tags" term="bootstrap-4" />
+        <author>
+            <name>Febry Aryo</name>
+            <uri>https://stackoverflow.com/users/12574063</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/64751473/how-to-vertically-bootstraps-list-group-text" />
+        <published>2020-11-09T12:13:58Z</published>
+        <updated>2020-11-10T00:40:29Z</updated>
+        <summary type="html">
+            &lt;p&gt;I want to display the text vertically. I&#x27;ve tried a tutorial that has text rotation. But it lefts space in right side. This is a code that I&#x27;ve to try and mixed with a little piece of code from the tutorial:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;1. STYLE:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;.list-group-item {&#xA;   background: black;&#xA;}&#xA;&#xA;.list-group {&#xA;   text-align: center;&#xA;   -webkit-transform-origin: 100% 0;&#xA;   -moz-transform-origin: 100% 0;&#xA;   -o-transform-origin: 100% 0;&#xA;   transform-origin: 100% 0;&#xA;   -webkit-transform: translate(-100%, 0) rotate(-90deg);&#xA;   -moz-transform: translate(-100%, 0) rotate(-90deg);&#xA;   -o-transform: translate(-100%, 0) rotate(-90deg);&#xA;   transform: translate(-100%, 0) rotate(-90deg);&#xA;   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;&lt;strong&gt;2. LIST&lt;/strong&gt;:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;&amp;lt;ul class=&amp;quot;list-group&amp;quot;&amp;gt;&#xA;   &amp;lt;li class=&amp;quot;list-group-item&amp;quot;&amp;gt;A&amp;lt;/li&amp;gt;&#xA;   &amp;lt;li class=&amp;quot;list-group-item&amp;quot;&amp;gt;B&amp;lt;/li&amp;gt;&#xA;   &amp;lt;li class=&amp;quot;list-group-item&amp;quot;&amp;gt;C&amp;lt;/li&amp;gt;&#xA;   &amp;lt;li class=&amp;quot;list-group-item&amp;quot;&amp;gt;D&amp;lt;/li&amp;gt;&#xA;   &amp;lt;li class=&amp;quot;list-group-item&amp;quot;&amp;gt;E&amp;lt;/li&amp;gt;&#xA;&amp;lt;/ul&amp;gt;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;&lt;strong&gt;3. GOAL:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/qLbvL.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/qLbvL.png&quot; alt=&quot;enter image description here&quot; /&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;4. RESULT:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/BEICr.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/BEICr.png&quot; alt=&quot;enter image description here&quot; /&gt;&lt;/a&gt;&lt;/p&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/64748946</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Same responses are received for every request sent from button</title>
+            <category scheme="https://stackoverflow.com/tags" term="java" />
+            <category scheme="https://stackoverflow.com/tags" term="android" />
+            <category scheme="https://stackoverflow.com/tags" term="android-studio" />
+            <category scheme="https://stackoverflow.com/tags" term="networking" />
+            <category scheme="https://stackoverflow.com/tags" term="android-networking" />
+        <author>
+            <name>ProgrammingEnthusiast</name>
+            <uri>https://stackoverflow.com/users/7944807</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/64748946/same-responses-are-received-for-every-request-sent-from-button" />
+        <published>2020-11-09T09:25:37Z</published>
+        <updated>2020-11-10T00:39:31Z</updated>
+        <summary type="html">
+            &lt;p&gt;The following code is used in the MainActivity:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;StringBuilder stringBuilder = new StringBuilder();&#xA;Cache cache;&#xA;@Override&#xA;protected void onCreate(Bundle savedInstanceState) {&#xA;    super.onCreate(savedInstanceState);&#xA;    setContentView(R.layout.activity_main);&#xA;    buttonDiscard = findViewById(R.id.buttonDiscard);&#xA;&#xA;    RequestQueue requestQueue;&#xA;    cache = new DiskBasedCache(getCacheDir(), 1024 * 1024); // 1MB cap&#xA;    Network network = new BasicNetwork(new HurlStack());&#xA;    requestQueue = new RequestQueue(cache, network);&#xA;    requestQueue.start();&#xA;    String url =&amp;quot;https://www.themealdb.com/api/json/v1/1/random.php&amp;quot;;&#xA;    StringRequest stringRequest = new StringRequest(Request.Method.GET, url,&#xA;            stringBuilder::append,&#xA;            error -&amp;gt; System.out.println(&amp;quot;Error occurred&amp;quot;));&#xA;    requestQueue.add(stringRequest);&#xA;}&#xA;public void handleDiscardClick(View view){&#xA;    System.out.println(stringBuilder);&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;The issue I am facing is that I am receiving same string response for every click on the button from the url which gives random meal in json format. The only way I can get different string is with every restart of the android app which is definitely not good at all. I tried moving the networking code inside the button function still I am receiving same response. I will highly appreciate if anyone can tell me how to get different response for every click on the button. (Sorry, I am new to android networking)&lt;/p&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/64748217</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Node.js App Keeps Getting ECONNRESET Error</title>
+            <category scheme="https://stackoverflow.com/tags" term="node.js" />
+            <category scheme="https://stackoverflow.com/tags" term="windows-subsystem-for-linux" />
+            <category scheme="https://stackoverflow.com/tags" term="econnreset" />
+        <author>
+            <name>John Mills</name>
+            <uri>https://stackoverflow.com/users/80282</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/64748217/node-js-app-keeps-getting-econnreset-error" />
+        <published>2020-11-09T08:37:10Z</published>
+        <updated>2020-11-10T00:41:14Z</updated>
+        <summary type="html">
+            &lt;p&gt;Running on Windows 10 with WSL 2, I have a Node.js App (App1) that I&#x27;m trying to load test using another Node.js App (App2). App2 mocks the HTTP services that App1 depends on i.e. AWS &amp;amp; Salesforce APIs. The Salesforce portion, uses the CometD protocol to push messages to App1.&lt;/p&gt;&#xA;&lt;p&gt;App2 is running on Ubuntu in WSL 2. App1 is running on Windows 10. Both are on the same physical machine.&lt;/p&gt;&#xA;&lt;p&gt;When I push thousands of messages to App1 over CometD (HTTP long-polling), App1 starts choking and receiving the following error:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;error: {&#xA;  &amp;quot;errno&amp;quot;: -4077,&#xA;  &amp;quot;code&amp;quot;: &amp;quot;ECONNRESET&amp;quot;,&#xA;  &amp;quot;syscall&amp;quot;: &amp;quot;read&amp;quot;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;I kill App1 and restart it, but it continues to receive the same error. It doesn&#x27;t matter whether I&#x27;m running App1 via VSCode or just using node from the command line.&lt;/p&gt;&#xA;&lt;p&gt;Strangely, I can use CURL to make requests to App2 and it works fine. The only way I can get App1 talking to App2 again, is to restart the computer.&lt;/p&gt;&#xA;&lt;p&gt;Why does this happen and is there a way I can fix it without having to restart Windows?&lt;/p&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/63763896</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">TextView height is different depending on text when textSize it&#x27;s the same. Why?</title>
+            <category scheme="https://stackoverflow.com/tags" term="android" />
+            <category scheme="https://stackoverflow.com/tags" term="android-layout" />
+            <category scheme="https://stackoverflow.com/tags" term="textview" />
+            <category scheme="https://stackoverflow.com/tags" term="android-view" />
+            <category scheme="https://stackoverflow.com/tags" term="layoutparams" />
+        <author>
+            <name>NullPointerException</name>
+            <uri>https://stackoverflow.com/users/479886</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/63763896/textview-height-is-different-depending-on-text-when-textsize-its-the-same-why" />
+        <published>2020-09-06T11:58:54Z</published>
+        <updated>2020-11-10T00:41:48Z</updated>
+        <summary type="html">
+            &lt;p&gt;I noticed, that a TextView with the same textSize can have a different height depending on the String it is displaying.&lt;/p&gt;&#xA;&lt;p&gt;I disscovered it when paiting a simple TableLayout which has some TableRow items with some cells, each cell is a TextView.&lt;/p&gt;&#xA;&lt;p&gt;Those cells doesn&#x27;t have top margin, and they are being painted perfectly in Android 8.0 and upper devices, &lt;strong&gt;but in Android 7.0 and lower versions, some of the cells are adding a top margin between them, and this is because the height of the TextView is different.&lt;/strong&gt; I can&#x27;t understand how is that happening, it&#x27;s very frustrating.&lt;/p&gt;&#xA;&lt;p&gt;In this case, it&#x27;s happening in the TextView called &lt;code&gt;player&lt;/code&gt; and only when the name is too much long and it&#x27;s using ellipsize to truncate it.&lt;/p&gt;&#xA;&lt;p&gt;The code is very simple:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;public void populateGoalscorersTable(ArrayList&amp;lt;Player&amp;gt; players){&#xA;    goalscorersTableLayout.removeAllViews();&#xA;&#xA;    for (int i=0; i&amp;lt;players.size() &amp;amp;&amp;amp; i&amp;lt;30; i&#x2B;&#x2B;){&#xA;        TableRow row = new TableRow(this);&#xA;        row.setLayoutParams(goalscorersRowParams);&#xA;&#xA;        TextView position = new TextView(this);&#xA;        position.setGravity(Gravity.CENTER);&#xA;        position.setLayoutParams(goalscorersPositionParams);&#xA;        position.setText(&amp;quot;&amp;quot;&#x2B;(i&#x2B;1));&#xA;        position.setBackgroundResource(R.drawable.table_cell_background);&#xA;        position.setMinHeight((int) getResources().getDimension(R.dimen.cell_height));&#xA;        row.addView(position);&#xA;&#xA;        TextView player = new TextView(this);&#xA;        player.setGravity(Gravity.LEFT | Gravity.CENTER_VERTICAL);&#xA;        player.setLayoutParams(goalscorersPlayerParams);&#xA;        player.setText(players.get(i).getName());&#xA;        player.setBackgroundResource(R.drawable.table_cell_background);&#xA;        player.setMaxLines(1);&#xA;        player.setEllipsize(TextUtils.TruncateAt.END);&#xA;        player.setPadding((int) getResources().getDimension(R.dimen.spacing_small),0,(int) getResources().getDimension(R.dimen.spacing_small),0);&#xA;        player.setMinHeight((int) getResources().getDimension(R.dimen.cell_height));&#xA;        row.addView(player);&#xA;&#xA;        TextView team = new TextView(this);&#xA;        team.setGravity(Gravity.LEFT | Gravity.CENTER_VERTICAL);&#xA;        team.setLayoutParams(goalscorersTeamParams);&#xA;        team.setText(players.get(i).getTeam().getName());&#xA;        team.setBackgroundResource(R.drawable.table_cell_background);&#xA;        team.setMaxLines(1);&#xA;        team.setEllipsize(TextUtils.TruncateAt.END);&#xA;        team.setPadding((int) getResources().getDimension(R.dimen.spacing_small),0, (int) getResources().getDimension(R.dimen.spacing_small),0);&#xA;        team.setMinHeight((int) getResources().getDimension(R.dimen.cell_height));&#xA;        row.addView(team);&#xA;&#xA;        TextView goals = new TextView(this);&#xA;        goals.setGravity(Gravity.CENTER);&#xA;        goals.setLayoutParams(goalscorersPositionParams);&#xA;        goals.setText(&amp;quot;&amp;quot;&#x2B;players.get(i).getLeagueGoals());&#xA;        goals.setBackgroundResource(R.drawable.table_cell_background);&#xA;        goals.setMinHeight((int) getResources().getDimension(R.dimen.cell_height));&#xA;        row.addView(goals);&#xA;&#xA;        if (players.get(i).getTeam() == Manager.getInstance().getTeam()){&#xA;            player.setTextColor(getResources().getColor(R.color.player_team));&#xA;            player.setTypeface(null, Typeface.BOLD);&#xA;&#xA;            team.setTextColor(getResources().getColor(R.color.player_team));&#xA;            team.setTypeface(null, Typeface.BOLD);&#xA;        }&#xA;&#xA;        goalscorersTableLayout.addView(row);&#xA;    }&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;It&#x27;s not the only way to make this errorneal top margin appearing (caused by a incorrect text height), I can see it for example when i have a row whith TextView cells with only one character and others with more than one character. The TextViews with more characters get&#x27;s the margin. Also i can see this error happening when some TextViews are aligned to left and others centered. Very frustrating.&lt;/p&gt;&#xA;&lt;p&gt;How can this be avoided?&lt;/p&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/48986732</id>
+        <re:rank scheme="https://stackoverflow.com">13</re:rank>
+        <title type="text">Airflow: Creating a DAG in airflow via UI</title>
+            <category scheme="https://stackoverflow.com/tags" term="airflow" />
+            <category scheme="https://stackoverflow.com/tags" term="airflow-scheduler" />
+        <author>
+            <name>Mukul Jain</name>
+            <uri>https://stackoverflow.com/users/579705</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/48986732/airflow-creating-a-dag-in-airflow-via-ui" />
+        <published>2018-02-26T10:51:22Z</published>
+        <updated>2020-11-10T00:40:57Z</updated>
+        <summary type="html">
+            &lt;p&gt;Airflow veterans please help,&lt;/p&gt;&#xA;&#xA;&lt;p&gt;I was looking for a cron replacement and came across apache airflow.&lt;/p&gt;&#xA;&#xA;&lt;p&gt;We have a setup where multiple users should be able to create their own DAGs and schedule their jobs. &lt;/p&gt;&#xA;&#xA;&lt;p&gt;Our users are a mix of people who may not know how to write the DAG python file. Also, they may not have access to the server where airflow is running.&lt;/p&gt;&#xA;&#xA;&lt;p&gt;Is it possible to create an airflow DAG via UI. I could not find any reference to the same. All examples speak about creating a python file and uploading it to the $AIRFLOW_HOME/dag/ directory. Users will not have access to this directory.&lt;/p&gt;&#xA;&#xA;&lt;p&gt;Rundeck for example allows user to add workflows and task dependencies via UI. Is there a plugin/functionality similar to this in airflow.&lt;/p&gt;&#xA;&#xA;&lt;p&gt;PS: I really like the way airflow shows the dependency graphs and want to try it out. But If creating a DAG is so complicated, then it will be a major problem for lots of my end users. &lt;/p&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/31706527</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Summing Columns Between Dividing Lines Using Bash Script</title>
+            <category scheme="https://stackoverflow.com/tags" term="linux" />
+            <category scheme="https://stackoverflow.com/tags" term="bash" />
+            <category scheme="https://stackoverflow.com/tags" term="parsing" />
+            <category scheme="https://stackoverflow.com/tags" term="awk" />
+            <category scheme="https://stackoverflow.com/tags" term="sed" />
+        <author>
+            <name>mnot</name>
+            <uri>https://stackoverflow.com/users/3974894</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/31706527/summing-columns-between-dividing-lines-using-bash-script" />
+        <published>2015-07-29T16:49:58Z</published>
+        <updated>2020-11-10T00:39:34Z</updated>
+        <summary type="html">
+            &lt;p&gt;I have data in the form of:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;23:31:39&#xA;20 0 24436 404 56 R 2.7 0.0 1:38.52&#xA;20 0 43064 20112 4484 R 0.8 0.1 0:00.12&#xA;20 0 27116 5152 3856 S 0.3 0.0 0:00.05&#xA;20 0 24952 4672 3708 S 0.0 0.0 0:00.05&#xA;23:31:54&#xA;20 0 24436 404 56 R 2.7 0.0 1:38.93&#xA;20 0 24952 4672 3708 S 0.0 0.0 0:00.05&#xA;23:32:09&#xA;20 0 24436 404 56 R 2.6 0.0 1:39.32&#xA;20 0 24952 4672 3708 S 0.0 0.0 0:00.05&#xA;23:32:24&#xA;20 0 24436 404 56 R 2.9 0.0 1:39.76&#xA;20 0 24952 4672 3708 S 0.0 0.0 0:00.05&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Data above alternates b/w timestamp line and then rows of data to be summed.&lt;/p&gt;&#xA;&lt;p&gt;I want to sum columns in the lines under each timestamp so that when I add say...column 1 what I get would look like:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;23:31:39&#xA;80&#xA;23:31:54&#xA;40&#xA;23:32:09&#xA;40&#xA;23:32:24&#xA;40&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;And when I add columns 1 and 7, I get:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;23:31:39&#xA;80 3.8&#xA;23:31:54&#xA;40 2.7&#xA;23:32:09&#xA;40 2.6&#xA;23:32:24&#xA;40 2.9&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;How would I manipulate the data this way? I&#x27;m trying to get it into a form that I can easily plot.&lt;/p&gt;&#xA;
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/25116521</id>
+        <re:rank scheme="https://stackoverflow.com">4</re:rank>
+        <title type="text">How do I get a part of the output of a command in Linux Bash?</title>
+            <category scheme="https://stackoverflow.com/tags" term="linux" />
+            <category scheme="https://stackoverflow.com/tags" term="bash" />
+        <author>
+            <name>William Edwards</name>
+            <uri>https://stackoverflow.com/users/3837431</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/25116521/how-do-i-get-a-part-of-the-output-of-a-command-in-linux-bash" />
+        <published>2014-08-04T10:21:22Z</published>
+        <updated>2020-11-10T00:40:59Z</updated>
+        <summary type="html">
+            &lt;p&gt;How do I get a part of the output of a command in Bash?&lt;/p&gt;&#xA;&lt;p&gt;For example, the command &lt;code&gt;php -v&lt;/code&gt; outputs:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;PHP 5.3.28 (cli) (built: Jun 23 2014 16:25:09)&#xA;Copyright (c) 1997-2013 The PHP Group&#xA;Zend Engine v2.3.0, Copyright (c) 1998-2013 Zend Technologies with the ionCube PHP Loader v4.6.1, Copyright (c) 2002-2014, by ionCube Ltd.&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;And I only want to output the &lt;code&gt;PHP 5.3.28 (cli)&lt;/code&gt; part. How do I do that?&lt;/p&gt;&#xA;&lt;p&gt;I&#x27;ve tried &lt;code&gt;php -v | grep &#x27;PHP 5.3.28&#x27;&lt;/code&gt;, but that outputs: &lt;code&gt;PHP 5.3.28 (cli) (built: Jun 23 2014 16:25:09)&lt;/code&gt; and that&#x27;s not what I want.&lt;/p&gt;&#xA;
+        </summary>
+    </entry>
+</feed>
