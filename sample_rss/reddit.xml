@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed
+    xmlns="http://www.w3.org/2005/Atom"
+    xmlns:media="http://search.yahoo.com/mrss/">
+    <category term="news" label="r/news"/>
+    <updated>2020-11-11T08:12:06+00:00</updated>
+    <icon>https://www.redditstatic.com/icon.png/</icon>
+    <id>/r/news/.rss</id>
+    <link rel="self" href="https://www.reddit.com/r/news/.rss" type="application/atom+xml" />
+    <link rel="alternate" href="https://www.reddit.com/r/news/" type="text/html" />
+    <logo>https://a.thumbs.redditmedia.com/BCPcjmQTYwA3TAWllW7AJPixfTMQlMxn-fbD2pgcHT4.png</logo>
+    <subtitle>/r/news is: real news articles, primarily but not exclusively, news relating to the United States and the rest of the World. /r/news isn't: editorials, commercials, political minutiae, shouting, justin bieber updates, kitty pictures. For a subreddit for all news-related content (editorials, satire, etc.) visit /r/inthenews.</subtitle>
+    <title>All news, US and international.</title>
+    <entry>
+        <author>
+            <name>/u/voidworship</name>
+            <uri>https://www.reddit.com/user/voidworship</uri>
+        </author>
+        <category term="news" label="r/news"/>
+        <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/voidworship&quot;&gt; /u/voidworship &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.seattletimes.com/nation-world/postal-worker-admits-fabricating-allegations-of-ballot-tampering-officials-say/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/news/comments/jrylcr/postal_worker_admits_fabricating_allegations_of/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_jrylcr</id>
+        <link href="https://www.reddit.com/r/news/comments/jrylcr/postal_worker_admits_fabricating_allegations_of/" />
+        <updated>2020-11-11T01:38:16+00:00</updated>
+        <title>Postal worker admits fabricating allegations of ballot tampering, officials say</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/Pessimist2020</name>
+            <uri>https://www.reddit.com/user/Pessimist2020</uri>
+        </author>
+        <category term="news" label="r/news"/>
+        <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/Pessimist2020&quot;&gt; /u/Pessimist2020 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.reuters.com/article/idUSKBN27Q33P?utm_medium=Social&amp;amp;utm_source=twitter&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/news/comments/jrvdbt/new_york_city_to_try_responding_to_mental_health/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_jrvdbt</id>
+        <link href="https://www.reddit.com/r/news/comments/jrvdbt/new_york_city_to_try_responding_to_mental_health/" />
+        <updated>2020-11-10T22:38:38+00:00</updated>
+        <title>New York City to try responding to mental health calls without police</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/craiger_123</name>
+            <uri>https://www.reddit.com/user/craiger_123</uri>
+        </author>
+        <category term="news" label="r/news"/>
+        <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/craiger_123&quot;&gt; /u/craiger_123 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.reuters.com/article/us-health-coronavirus-usa-fauci-idUSKBN27Q2SU&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/news/comments/jrudmg/fauci_says_he_will_take_new_pfizer_vaccine_if_fda/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_jrudmg</id>
+        <link href="https://www.reddit.com/r/news/comments/jrudmg/fauci_says_he_will_take_new_pfizer_vaccine_if_fda/" />
+        <updated>2020-11-10T21:46:03+00:00</updated>
+        <title>Fauci says he will take new Pfizer vaccine if FDA approves it</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/adam_kevine</name>
+            <uri>https://www.reddit.com/user/adam_kevine</uri>
+        </author>
+        <category term="news" label="r/news"/>
+        <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/adam_kevine&quot;&gt; /u/adam_kevine &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.whas11.com/mobile/article/news/local/brett-hankison-lawsuit-sexually-assaulting-women/417-82f0805c-37cd-4748-9a7b-9b4cacb132fd&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/news/comments/jrxq64/brett_hankison_exlmpd_officer_involved_in_breonna/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_jrxq64</id>
+        <link href="https://www.reddit.com/r/news/comments/jrxq64/brett_hankison_exlmpd_officer_involved_in_breonna/" />
+        <updated>2020-11-11T00:47:08+00:00</updated>
+        <title>Brett Hankison, Ex-LMPD officer involved in Breonna Taylor case, accused of sexual assault in new lawsuit</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/Ezzy17</name>
+            <uri>https://www.reddit.com/user/Ezzy17</uri>
+        </author>
+        <category term="news" label="r/news"/>
+        <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/Ezzy17&quot;&gt; /u/Ezzy17 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.nytimes.com/2020/11/10/world/covid-cdc-guidelines-masks.html&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/news/comments/jryf3d/the_cdc_updates_its_findings_maskwearing_protects/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_jryf3d</id>
+        <link href="https://www.reddit.com/r/news/comments/jryf3d/the_cdc_updates_its_findings_maskwearing_protects/" />
+        <updated>2020-11-11T01:27:54+00:00</updated>
+        <title>The C.D.C. updates its findings: Mask-wearing protects you, not just those around you.</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/crematoryfire</name>
+            <uri>https://www.reddit.com/user/crematoryfire</uri>
+        </author>
+        <category term="news" label="r/news"/>
+        <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/crematoryfire&quot;&gt; /u/crematoryfire &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://apnews.com/article/britney-spears-seeks-freedom-from-father-685c547c55bebd617bd637e3fb55d64c&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/news/comments/jrq7zj/in_court_moves_britney_spears_seeks_freedom_from/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_jrq7zj</id>
+        <link href="https://www.reddit.com/r/news/comments/jrq7zj/in_court_moves_britney_spears_seeks_freedom_from/" />
+        <updated>2020-11-10T18:17:38+00:00</updated>
+        <title>In court moves, Britney Spears seeks freedom from father</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/SaulKD</name>
+            <uri>https://www.reddit.com/user/SaulKD</uri>
+        </author>
+        <category term="news" label="r/news"/>
+        <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/SaulKD&quot;&gt; /u/SaulKD &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.bbc.com/news/world-us-canada-54891974&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/news/comments/jrrm43/usmexico_border_bid_to_reunite_migrant_families/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_jrrm43</id>
+        <link href="https://www.reddit.com/r/news/comments/jrrm43/usmexico_border_bid_to_reunite_migrant_families/" />
+        <updated>2020-11-10T19:26:39+00:00</updated>
+        <title>US-Mexico border: Bid to reunite migrant families finds 121 more separated children</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/surrealsunshine</name>
+            <uri>https://www.reddit.com/user/surrealsunshine</uri>
+        </author>
+        <category term="news" label="r/news"/>
+        <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/surrealsunshine&quot;&gt; /u/surrealsunshine &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://timesofsandiego.com/life/2020/11/10/tom-metzger-dies-at-82-notorious-kkk-boss-supremacist-who-ran-for-congress/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/news/comments/jrzp2p/tom_metzger_dies_at_82_notorious_kkk_boss/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_jrzp2p</id>
+        <link href="https://www.reddit.com/r/news/comments/jrzp2p/tom_metzger_dies_at_82_notorious_kkk_boss/" />
+        <updated>2020-11-11T02:44:25+00:00</updated>
+        <title>Tom Metzger Dies at 82; Notorious KKK Boss, Supremacist Who Ran for Congress</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/VPStaceyAbrams</name>
+            <uri>https://www.reddit.com/user/VPStaceyAbrams</uri>
+        </author>
+        <category term="news" label="r/news"/>
+        <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/VPStaceyAbrams&quot;&gt; /u/VPStaceyAbrams &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.wired.com/story/boogaloo-boys-3d-printed-machine-gun-parts/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/news/comments/jrmj31/fbi_says_boogaloo_boys_bought_3dprinted_machine/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_jrmj31</id>
+        <link href="https://www.reddit.com/r/news/comments/jrmj31/fbi_says_boogaloo_boys_bought_3dprinted_machine/" />
+        <updated>2020-11-10T15:06:32+00:00</updated>
+        <title>FBI Says ‘Boogaloo Boys’ Bought 3D-Printed Machine Gun Parts</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/aubonpaine</name>
+            <uri>https://www.reddit.com/user/aubonpaine</uri>
+        </author>
+        <category term="news" label="r/news"/>
+        <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/aubonpaine&quot;&gt; /u/aubonpaine &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.nytimes.com/2020/11/10/nyregion/brian-maiorana-threat-fbi-schumer.html&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/news/comments/jryl85/man_arrested_over_threat_to_schumer_and_vow_to/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_jryl85</id>
+        <link href="https://www.reddit.com/r/news/comments/jryl85/man_arrested_over_threat_to_schumer_and_vow_to/" />
+        <updated>2020-11-11T01:38:04+00:00</updated>
+        <title>Man Arrested Over Threat to Schumer and Vow to ‘Blow Up’ F.B.I.</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/FenrirIII</name>
+            <uri>https://www.reddit.com/user/FenrirIII</uri>
+        </author>
+        <category term="news" label="r/news"/>
+        <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/FenrirIII&quot;&gt; /u/FenrirIII &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.cbsnews.com/news/sydney-barber-first-black-woman-us-naval-academy-brigade-commander/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/news/comments/jrm2cg/sydney_barber_will_be_the_first_black_woman_to/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_jrm2cg</id>
+        <link href="https://www.reddit.com/r/news/comments/jrm2cg/sydney_barber_will_be_the_first_black_woman_to/" />
+        <updated>2020-11-10T14:39:39+00:00</updated>
+        <title>Sydney Barber will be the first Black woman to serve as U.S. Naval Academy brigade commander</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/canadaoilguy</name>
+            <uri>https://www.reddit.com/user/canadaoilguy</uri>
+        </author>
+        <category term="news" label="r/news"/>
+        <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/canadaoilguy&quot;&gt; /u/canadaoilguy &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.cnn.com/2020/11/10/europe/cardinal-theodore-mccarrick-vatican-report-intl/index.html&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/news/comments/jrktii/vatican_admits_pope_john_paul_ii_was_warned_about/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_jrktii</id>
+        <link href="https://www.reddit.com/r/news/comments/jrktii/vatican_admits_pope_john_paul_ii_was_warned_about/" />
+        <updated>2020-11-10T13:21:10+00:00</updated>
+        <title>Vatican admits Pope John Paul II was warned about abusive archbishop Theodore McCarrick, while clearing Francis</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/discocrisco</name>
+            <uri>https://www.reddit.com/user/discocrisco</uri>
+        </author>
+        <category term="news" label="r/news"/>
+        <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/discocrisco&quot;&gt; /u/discocrisco &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://apnews.com/95e9ecf82f3b177db3b102b7bbbbed64&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/news/comments/jrz7ui/teen_gets_128_years_for_killing_82yearold_during/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_jrz7ui</id>
+        <link href="https://www.reddit.com/r/news/comments/jrz7ui/teen_gets_128_years_for_killing_82yearold_during/" />
+        <updated>2020-11-11T02:15:08+00:00</updated>
+        <title>Teen gets 128 years for killing 82-year-old during robbery</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/keplar</name>
+            <uri>https://www.reddit.com/user/keplar</uri>
+        </author>
+        <category term="news" label="r/news"/>
+        <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/keplar&quot;&gt; /u/keplar &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.bbc.com/news/election-us-2020-54882647&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/news/comments/jrlibu/us_election_justice_lawyer_quits_after_attorney/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_jrlibu</id>
+        <link href="https://www.reddit.com/r/news/comments/jrlibu/us_election_justice_lawyer_quits_after_attorney/" />
+        <updated>2020-11-10T14:06:20+00:00</updated>
+        <title>US election: Justice lawyer quits after attorney general orders 'vote fraud' inquiries</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/GQveracity</name>
+            <uri>https://www.reddit.com/user/GQveracity</uri>
+        </author>
+        <category term="news" label="r/news"/>
+        <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/GQveracity&quot;&gt; /u/GQveracity &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.bbc.com/news/entertainment-arts-54885788&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/news/comments/jrj2jv/scoobydoo_cocreator_ken_spears_dies_aged_82/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_jrj2jv</id>
+        <link href="https://www.reddit.com/r/news/comments/jrj2jv/scoobydoo_cocreator_ken_spears_dies_aged_82/" />
+        <updated>2020-11-10T11:01:02+00:00</updated>
+        <title>Scooby-Doo co-creator Ken Spears dies aged 82</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/thinkB4WeSpeak</name>
+            <uri>https://www.reddit.com/user/thinkB4WeSpeak</uri>
+        </author>
+        <category term="news" label="r/news"/>
+        <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/thinkB4WeSpeak&quot;&gt; /u/thinkB4WeSpeak &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://wamu.org/story/20/11/09/fairfax-county-confederate-monuments-courthouse/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/news/comments/jrs1ik/fairfax_county_courthouse_removes_confederate/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_jrs1ik</id>
+        <link href="https://www.reddit.com/r/news/comments/jrs1ik/fairfax_county_courthouse_removes_confederate/" />
+        <updated>2020-11-10T19:48:03+00:00</updated>
+        <title>Fairfax County Courthouse Removes Confederate Monuments</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/Pessimist2020</name>
+            <uri>https://www.reddit.com/user/Pessimist2020</uri>
+        </author>
+        <category term="news" label="r/news"/>
+        <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/Pessimist2020&quot;&gt; /u/Pessimist2020 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.reuters.com/article/us-health-coronavirus-usa-hospitalizatio/u-s-covid-19-hospitalizations-surge-to-record-of-just-over-59000-patients-reuters-tally-idUSKBN27Q0DX&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/news/comments/jrjrks/us_covid19_hospitalizations_surge_to_record_of/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_jrjrks</id>
+        <link href="https://www.reddit.com/r/news/comments/jrjrks/us_covid19_hospitalizations_surge_to_record_of/" />
+        <updated>2020-11-10T12:00:47+00:00</updated>
+        <title>U.S. COVID-19 hospitalizations surge to record of just over 59,000 patients: Reuters tally</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/zanman28</name>
+            <uri>https://www.reddit.com/user/zanman28</uri>
+        </author>
+        <category term="news" label="r/news"/>
+        <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/zanman28&quot;&gt; /u/zanman28 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.cnn.com/2020/11/10/entertainment/miss-usa-2020-winner-first-black-mississippi-trnd/index.html&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/news/comments/jrsi5p/miss_usa_2020_is_the_first_black_woman_to/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_jrsi5p</id>
+        <link href="https://www.reddit.com/r/news/comments/jrsi5p/miss_usa_2020_is_the_first_black_woman_to/" />
+        <updated>2020-11-10T20:10:34+00:00</updated>
+        <title>Miss USA 2020 is the first Black woman to represent Mississippi</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/idontknow1791</name>
+            <uri>https://www.reddit.com/user/idontknow1791</uri>
+        </author>
+        <category term="news" label="r/news"/>
+        <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/idontknow1791&quot;&gt; /u/idontknow1791 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.cnn.com/2020/11/10/health/masks-cdc-updated-guidance/index.html&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/news/comments/js2hde/cdc_says_masks_protect_wearers_from_covid19/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_js2hde</id>
+        <link href="https://www.reddit.com/r/news/comments/js2hde/cdc_says_masks_protect_wearers_from_covid19/" />
+        <updated>2020-11-11T05:46:19+00:00</updated>
+        <title>CDC says masks protect wearers from Covid-19</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/seabb</name>
+            <uri>https://www.reddit.com/user/seabb</uri>
+        </author>
+        <category term="news" label="r/news"/>
+        <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/seabb&quot;&gt; /u/seabb &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.straitstimes.com/asia/east-asia/south-korea-confirms-h5n8-bird-flu-in-wild-birds-issues-warning&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/news/comments/jrrkya/south_korea_confirms_h5n8_bird_flu_in_wild_birds/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_jrrkya</id>
+        <link href="https://www.reddit.com/r/news/comments/jrrkya/south_korea_confirms_h5n8_bird_flu_in_wild_birds/" />
+        <updated>2020-11-10T19:24:56+00:00</updated>
+        <title>South Korea confirms H5N8 bird flu in wild birds, issues warning</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/cristianpodar</name>
+            <uri>https://www.reddit.com/user/cristianpodar</uri>
+        </author>
+        <category term="news" label="r/news"/>
+        <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/cristianpodar&quot;&gt; /u/cristianpodar &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://apnews.com/article/virus-outbreak-karachi-pakistan-islamabad-lahore-5c408f4a472cdff3a09e0d1f8434e639&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/news/comments/jrw4gf/the_latest_us_has_1m_new_coronavirus_cases_this/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_jrw4gf</id>
+        <link href="https://www.reddit.com/r/news/comments/jrw4gf/the_latest_us_has_1m_new_coronavirus_cases_this/" />
+        <updated>2020-11-10T23:18:50+00:00</updated>
+        <title>The Latest: US has 1M new coronavirus cases this month</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/VPStaceyAbrams</name>
+            <uri>https://www.reddit.com/user/VPStaceyAbrams</uri>
+        </author>
+        <category term="news" label="r/news"/>
+        <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/VPStaceyAbrams&quot;&gt; /u/VPStaceyAbrams &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.cnn.com/2020/11/11/us/louisville-breonna-taylor-officer-sexual-assault/index.html?utm_source=feedburner&amp;amp;utm_medium=feed&amp;amp;utm_campaign=Feed%3A+rss%2Fcnn_topstories+%28RSS%3A+CNN+-+Top+Stories%29&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/news/comments/js2uq4/former_police_officer_involved_in_fatal_shooting/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_js2uq4</id>
+        <link href="https://www.reddit.com/r/news/comments/js2uq4/former_police_officer_involved_in_fatal_shooting/" />
+        <updated>2020-11-11T06:14:22+00:00</updated>
+        <title>Former police officer involved in fatal shooting of Breonna Taylor accused of sexual assault, according to lawsuit</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/AngelaMotorman</name>
+            <uri>https://www.reddit.com/user/AngelaMotorman</uri>
+        </author>
+        <category term="news" label="r/news"/>
+        <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/AngelaMotorman&quot;&gt; /u/AngelaMotorman &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.nytimes.com/2020/11/10/upshot/covid-testing-doctor-fees.html&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/news/comments/jrpepl/these_towns_trusted_a_doctor_to_set_up_covid/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_jrpepl</id>
+        <link href="https://www.reddit.com/r/news/comments/jrpepl/these_towns_trusted_a_doctor_to_set_up_covid/" />
+        <updated>2020-11-10T17:36:56+00:00</updated>
+        <title>These Towns Trusted a Doctor to Set Up Covid Testing. Sample Patient Fee: $1,944.</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/wetpissnapkin</name>
+            <uri>https://www.reddit.com/user/wetpissnapkin</uri>
+        </author>
+        <category term="news" label="r/news"/>
+        <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/wetpissnapkin&quot;&gt; /u/wetpissnapkin &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.cnn.com/2020/11/10/health/us-coronavirus-tuesday/index.html&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/news/comments/jrvp4j/expert_predicts_us_could_soon_hit_200000_daily/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_jrvp4j</id>
+        <link href="https://www.reddit.com/r/news/comments/jrvp4j/expert_predicts_us_could_soon_hit_200000_daily/" />
+        <updated>2020-11-10T22:56:00+00:00</updated>
+        <title>Expert predicts US could soon hit 200,000 daily coronavirus cases as the nation tops 10 million infections</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/twss416</name>
+            <uri>https://www.reddit.com/user/twss416</uri>
+        </author>
+        <category term="news" label="r/news"/>
+        <content type="html">&amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/twss416&quot;&gt; /u/twss416 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://globalnews.ca/news/7453718/kitchener-waterloo-racist-attacks/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/news/comments/jrqc54/5_teens_arrested_after_racist_terror_spree_in/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_jrqc54</id>
+        <link href="https://www.reddit.com/r/news/comments/jrqc54/5_teens_arrested_after_racist_terror_spree_in/" />
+        <updated>2020-11-10T18:23:35+00:00</updated>
+        <title>5 teens arrested after racist terror spree in Kitchener: Waterloo police</title>
+    </entry>
+</feed>
