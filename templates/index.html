@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href=" {{ url_for('static', filename='style.css') }}">
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
     <!--<link rel="alternate" type="application/rss+xml" title="RSS" href="rss">-->
-    <title>Corona virus - Live Update</title></head>
+    <title>Cynical News - Beta</title></head>
 
 <!-- Global site tag (gtag.js) - Google Analytics TODO: change this -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155000519-2"></script>
@@ -58,6 +58,12 @@
                             {% set tags = each.tags.split(',') %}
                             {% for tag in tags %}
                                 <button>{{ tag }}</button>
+                            {% endfor %}
+                        </td>
+                        <td>
+                            {% set domains = each.domains.split(',') %}
+                            {% for domain in domains %}
+                                <button style="background-color: rgb(235, 168, 168);border: none;">{{ domain }}</button>
                             {% endfor %}
                         </td>
                     </tr>

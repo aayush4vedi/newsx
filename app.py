@@ -16,7 +16,7 @@ def create_connection():
 @app.route('/cynical-reader/from')
 def from_source():
     '''
-        URL: /cynical-reader/from?site=hackernoon.com&page=1
+        URL: /cynical-reader/from?site=stackoverflow.com&page=1
     '''
     site = request.args.get('site', '')
     page = request.args.get('page', 1)
