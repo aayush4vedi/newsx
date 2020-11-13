@@ -9,6 +9,8 @@ from scrapy.crawler import CrawlerProcess
 from dateutil.parser import parse
 from env import HOST, DATABASE, USER, PASSWORD
 from utils import find_my_domain
+import os.path
+import pandas as pd
 
 
 class RssScraperSpiderGeneric(scrapy.Spider):
@@ -55,11 +57,17 @@ class RssScraperSpiderGeneric(scrapy.Spider):
 
     def insert_into_db(self, table, item, key=None):
         try:
-            placeholder = ', '.join(["%s"] * len(item))
-            statement = 'INSERT IGNORE INTO {table} ({columns}) VALUES ({values})'.format(
-                table=table, columns=','.join(item.keys()), values=placeholder)
-            self.cursor.execute(statement, list(item.values()))
-            self.conn.commit()
+            # placeholder = ', '.join(["%s"] * len(item))
+            # statement = 'INSERT IGNORE INTO {table} ({columns}) VALUES ({values})'.format(
+            #     table=table, columns=','.join(item.keys()), values=placeholder)
+            # self.cursor.execute(statement, list(item.values()))
+            # self.conn.commit()
+            df=pd.DataFrame(data=item, index=[0])
+            df.index+=1
+            directory = os.path.dirname(os.path.realpath(__file__))
+            filename = "scrapedfile.csv"
+            file_path = os.path.join(directory,'csvfiles/', filename)
+            df.to_csv(file_path,mode='a', header=False)
             # print('Item: {} inserted to {}'.format(item, table))
         except Exception as e:
             print('Error {} while inserting {}'.format(e, item))
@@ -108,11 +116,17 @@ class RssScraperSpiderStackoverflow(scrapy.Spider):
 
     def insert_into_db(self, table, item, key=None):
         try:
-            placeholder = ', '.join(["%s"] * len(item))
-            statement = 'INSERT IGNORE INTO {table} ({columns}) VALUES ({values})'.format(
-                table=table, columns=','.join(item.keys()), values=placeholder)
-            self.cursor.execute(statement, list(item.values()))
-            self.conn.commit()
+            # placeholder = ', '.join(["%s"] * len(item))
+            # statement = 'INSERT IGNORE INTO {table} ({columns}) VALUES ({values})'.format(
+            #     table=table, columns=','.join(item.keys()), values=placeholder)
+            # self.cursor.execute(statement, list(item.values()))
+            # self.conn.commit()
+            df=pd.DataFrame(data=item, index=[0])
+            df.index+=1
+            directory = os.path.dirname(os.path.realpath(__file__))
+            filename = "scrapedfile.csv"
+            file_path = os.path.join(directory,'csvfiles/', filename)
+            df.to_csv(file_path,mode='a', header=False)
             # print('Item: {} inserted to {}'.format(item, table))
         except Exception as e:
             print('Error {} while inserting {}'.format(e, item))
@@ -154,11 +168,17 @@ class RssScraperSpiderProductHunt(scrapy.Spider):
 
     def insert_into_db(self, table, item, key=None):
         try:
-            placeholder = ', '.join(["%s"] * len(item))
-            statement = 'INSERT IGNORE INTO {table} ({columns}) VALUES ({values})'.format(
-                table=table, columns=','.join(item.keys()), values=placeholder)
-            self.cursor.execute(statement, list(item.values()))
-            self.conn.commit()
+            # placeholder = ', '.join(["%s"] * len(item))
+            # statement = 'INSERT IGNORE INTO {table} ({columns}) VALUES ({values})'.format(
+            #     table=table, columns=','.join(item.keys()), values=placeholder)
+            # self.cursor.execute(statement, list(item.values()))
+            # self.conn.commit()
+            df=pd.DataFrame(data=item, index=[0])
+            df.index+=1
+            directory = os.path.dirname(os.path.realpath(__file__))
+            filename = "scrapedfile.csv"
+            file_path = os.path.join(directory,'csvfiles/', filename)
+            df.to_csv(file_path,mode='a', header=False)
             # print('Item: {} inserted to {}'.format(item, table))
         except Exception as e:
             print('Error {} while inserting {}'.format(e, item))
@@ -436,11 +456,17 @@ class RssScraperSpiderReddit(scrapy.Spider):
 
     def insert_into_db(self, table, item, key=None):
         try:
-            placeholder = ', '.join(["%s"] * len(item))
-            statement = 'INSERT IGNORE INTO {table} ({columns}) VALUES ({values})'.format(
-                table=table, columns=','.join(item.keys()), values=placeholder)
-            self.cursor.execute(statement, list(item.values()))
-            self.conn.commit()
+            # placeholder = ', '.join(["%s"] * len(item))
+            # statement = 'INSERT IGNORE INTO {table} ({columns}) VALUES ({values})'.format(
+            #     table=table, columns=','.join(item.keys()), values=placeholder)
+            # self.cursor.execute(statement, list(item.values()))
+            # self.conn.commit()
+            df=pd.DataFrame(data=item, index=[0])
+            df.index+=1
+            directory = os.path.dirname(os.path.realpath(__file__))
+            filename = "scrapedfile.csv"
+            file_path = os.path.join(directory,'csvfiles/', filename)
+            df.to_csv(file_path,mode='a', header=False)
             # print('Item: {} inserted to {}'.format(item, table))
         except Exception as e:
             print('Error {} while inserting {}'.format(e, item))

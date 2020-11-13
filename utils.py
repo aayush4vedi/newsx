@@ -461,7 +461,6 @@ def belongstosocial(s):
         'wikipedia',
         'geek',
         'tellhn',
-        'person',
         'blog',
         'article',
         'education',
